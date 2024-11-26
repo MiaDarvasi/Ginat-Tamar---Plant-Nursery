@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+
+    margin: 0;
+    padding: 0;
+}
+
+.App {
+    display: grid;
+    grid-template-columns: minmax(20px, 1fr) minmax(auto, 1400px) minmax(20px, 1fr);
+    
+    font-family: Montserrat-Regular;
+    color: var(--main-dark);
+
+    /* background: linear-gradient(to right, var(--main3) 10%, var(--main1) 90%); */
+}
+
+.App>* {
+    grid-column: 2;
+}
+
+.full {
+    grid-column: 1 / -1;
+}
+
+ul,
+li,
+a,
+button {
+    all: unset;
+}

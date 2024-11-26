@@ -1,0 +1,28 @@
+.landpage-cmp {
+    position: relative;
+}
+
+.landpage-cmp img {
+    width: 100%;
+    height: 60vh;
+    object-fit: cover;
+}
+
+.fade-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.fade-image.visible {
+    opacity: 1;
+}
+
+.landpage-cmp p {
+    margin-block-start: 60vh;
+    font-size: 2rem;
+    background-color: pink;
+    color: black;
+}

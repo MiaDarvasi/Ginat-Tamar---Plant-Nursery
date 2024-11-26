@@ -1,0 +1,19 @@
+:root {
+    --main1: #deeadc;
+    --main2: #E8ECD7;
+    --main3: #e7e3bc;
+    --main-dark: #241c1c;
+    
+    --dark-gray1: #2e2e2e;
+    --dark-gray2: #3c3c3c;
+    --dark-gray3: #505050;
+    --dark-gray4: #727272;
+    
+    --light-gray1: #eaeaea;
+    --light-gray2: #dadada;
+    --light-gray3: #c3c3c3;
+    --light-gray4: #adadad;
+
+    /* --main-dark: #156157; */
+    --main-light: #a6eeed;
+}
