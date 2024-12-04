@@ -1,9 +1,4 @@
 
-import logo from "../assets/imgs/logoclean.png";
-
-import ig from "../assets/imgs/icons/ig.svg";
-import whatsup from "../assets/imgs/icons/whatsup.svg";
-
 
 
 export function About() {

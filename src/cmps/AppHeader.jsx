@@ -1,5 +1,9 @@
 import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
+
 import trees from "../assets/imgs/trees.svg";
+import phone from "../assets/imgs/icons/phone.svg";
+
 
 export function AppHeader() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -21,18 +25,30 @@ export function AppHeader() {
 
   return (
     <section className={`app-header full ${isScrolled ? 'scrolled' : ''}`}>
-      <section className="app-header-content">
-        <section className="logo">
-          <img src={trees} alt="logo" />
-          <p>גינת תמר</p>
+      <section>
+        <section className="app-header-content">
+          <section className="header-contact">
+            <Link to="/">
+              <section className="logo">
+                <img src={trees} alt="logo" />
+                <p>גינת תמר</p>
+              </section>
+            </Link>
+            <h1>גינת תמר</h1>
+            <section className="header-call">
+              <a href="tel:02-6710335"><img src={phone} /></a>
+              <a href="tel:02-6710335"><p>02-6710335</p></a>
+            </section>
+          </section>
         </section>
+        <hr />
         <nav>
-          <a>דרכי התקשרות</a>
+          <a href="#connect">דרכי התקשרות</a>
           <a>גלריה</a>
           <a>קריסטלים</a>
-          <a>צמחים</a>
-          <a>קצת עלינו</a>
-          <a>בית</a>
+          <Link to="/categories">צמחים</Link>
+          <Link to="/about" >קצת עלינו</Link>
+          <Link to="/" >בית</Link>
         </nav>
       </section>
     </section>

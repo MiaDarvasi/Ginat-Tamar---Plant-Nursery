@@ -1,10 +1,12 @@
 .landpage-cmp {
     position: relative;
+    width: 100%;
+    height: 50vh;
 }
 
 .landpage-cmp img {
     width: 100%;
-    height: 60vh;
+    height: 100%;
     object-fit: cover;
 }
 
@@ -20,9 +22,98 @@
     opacity: 1;
 }
 
-.landpage-cmp p {
-    margin-block-start: 60vh;
-    font-size: 2rem;
-    background-color: pink;
-    color: black;
+.image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.65);
+    z-index: 1;
 }
+
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    z-index: 2;
+    text-align: center;
+    padding: 0 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skill-slider {
+    position: relative;
+    width: 100%;
+}
+
+.skill-slider .item {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    place-items: center;
+    justify-content: center;
+    max-width: 100%;
+    height: 100%;
+}
+
+.skill-slider .item .item-main-title {
+    font-size: 6rem;
+}
+
+.skill-slider .item .item-main-address {
+    font-size: 1rem;
+    opacity: 0.9;
+}
+
+.text-overlay h2 {
+    font-family:  Amatic-Bold;
+    font-size: 4rem;
+    margin: 0;
+    line-height: 1;
+}
+
+.text-overlay h3 {
+    font-family:  Noto-Thin;
+    font-size: 1.5rem;
+    margin: 0;
+    opacity: 0.7;
+}
+
+.text-overlay p {
+    font-family:  Noto-Condensed-Thin;
+    font-size: 2rem;
+    margin: 0;
+    margin-block-start: 1.5rem;
+    opacity: 0.7;
+}
+
+.text-overlay .contact-btn {
+    background-color: var(--green1);
+    padding: 0.5rem 1rem;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+    font-family:  Noto-Regular;
+    transition: 0.4s;
+}
+
+.text-overlay .contact-btn:hover {
+    cursor: pointer;
+    background-color: var(--green2);
+}
+
+.react-multiple-carousel__arrow{
+    background: transparent !important;
+    background-color: rgba(255, 255, 255, 0.3) !important;
+}
+
+.react-multiple-carousel__arrow:hover{
+    background-color: rgba(255, 255, 255, 0.5) !important;
+}
+

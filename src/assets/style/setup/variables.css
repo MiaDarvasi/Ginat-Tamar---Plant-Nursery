@@ -1,8 +1,13 @@
 :root {
-    --main1: #deeadc;
-    --main2: #E8ECD7;
-    --main3: #e7e3bc;
-    --main-dark: #241c1c;
+    --main-dark: #291f1f;
+
+    --green1: #99d54b;
+    --green1-dark: #85ba40;
+    --green2: #18a572;
+    --green2-dark: #148b60;
+    --yellow: #eecc50;
+
+
     
     --dark-gray1: #2e2e2e;
     --dark-gray2: #3c3c3c;

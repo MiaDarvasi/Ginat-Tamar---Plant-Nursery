@@ -5,11 +5,17 @@
 /* Basics */
 @import './basics/base.css';
 
+/* Pages */
+@import './pages/home-page.css';
+@import './pages/about.css';
+@import './pages/categories.css';
+
 /* Cmps */
 @import './cmps/app-header.css';
 @import './cmps/connect.css';
-@import './cmps/about.css';
 @import './cmps/landpage-cmp.css';
+@import './cmps/categories-cmp.css';
+
 
 
 

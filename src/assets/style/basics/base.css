@@ -12,11 +12,12 @@ body {
 
     margin: 0;
     padding: 0;
+    color: var(--main-dark);
 }
 
 .App {
     display: grid;
-    grid-template-columns: minmax(20px, 1fr) minmax(auto, 1400px) minmax(20px, 1fr);
+    grid-template-columns: minmax(40px, 1fr) minmax(auto, 1400px) minmax(40px, 1fr);
     
     font-family: Montserrat-Regular;
     color: var(--main-dark);

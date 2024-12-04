@@ -1,0 +1,25 @@
+.categories {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-block-start: 2rem;
+}
+
+.categories h1,
+.categories p {
+    margin: 0;
+}
+
+.categories .categories-title h1 {
+    font-family: Amatic-Bold;
+    font-size: 3rem;
+}
+
+.categories p {
+    font-family: Noto-Regular;
+    
+}
+
+.categories .categories-title p {
+    font-family: Noto-Thin;
+}
