@@ -44,3 +44,16 @@
     background-color: white;
     margin-top: 0.5rem;
 }
+
+
+@media (max-width: 775px) {
+    .categories-cmp {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .categories-cmp .category-card h1 {
+        font-size: 1.5rem;
+        top: 0.5rem;
+        right: 1rem;
+    }
+}

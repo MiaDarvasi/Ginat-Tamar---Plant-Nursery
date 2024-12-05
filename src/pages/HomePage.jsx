@@ -1,6 +1,7 @@
 import { About } from './About.jsx'
 import { LandpageCmp } from '../cmps/LandpageCmp.jsx'
 import { CategoriesCmp } from '../cmps/CategoriesCmp.jsx'
+import { ImgCarousel } from '../cmps/ImgCarousel.jsx'
 
 
 
@@ -10,6 +11,7 @@ export function HomePage() {
     <section className="home-page">
         <LandpageCmp />
         <CategoriesCmp />
+        {/* <ImgCarousel /> */}
     </section>
     </>
 }

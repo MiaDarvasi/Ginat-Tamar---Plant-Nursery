@@ -44,8 +44,8 @@ export function AppHeader() {
         <hr />
         <nav>
           <a href="#connect">דרכי התקשרות</a>
-          <a>גלריה</a>
-          <a>קריסטלים</a>
+          <Link to="/gallery">גלריה</Link>
+          <Link to="/crystal">קריסטלים</Link>
           <Link to="/categories">צמחים</Link>
           <Link to="/about" >קצת עלינו</Link>
           <Link to="/" >בית</Link>

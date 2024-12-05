@@ -37,7 +37,7 @@ export function LandpageCmp() {
     useEffect(() => {
         const intervalId = setInterval(() => {
             setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
-        }, 5000);
+        }, 4000);
 
         return () => clearInterval(intervalId);
     }, []);
@@ -58,8 +58,8 @@ export function LandpageCmp() {
                     <div className="item">
                         <section>
                             <h2 className="item-main-title">גינת תמר</h2>
-                            <h3 className="item-main-address" dir="rtl">דרך בית לחם 34</h3>
-                            <p>משתלה ירושלמית המציעה מגוון רחב של צמחים מכל הסוגים</p>
+                            <h3 className="item-main-address" dir="rtl">דרך בית לחם 34, ירושלים</h3>
+                            <p dir="rtl">המשתלה הירושלמית הותיקה ביותר, פועלת מאז 1984 ומציעה מגוון רחב של צמחים איכותיים בשירות אישי ומקצועי.</p>
                         </section>
                         <a href="#connect"><button className="contact-btn">דברו איתנו</button></a>
                     </div>
@@ -101,7 +101,7 @@ export function LandpageCmp() {
                     <div className="item">
                         <section>
                             <h2>עציצים וכלים</h2>
-                            <h3 dir="rtl">עציצי חרס קרמיקה פלסטיק ועוד</h3>
+                            <h3 dir="rtl">עציצי חרס, קרמיקה, פלסטיק ועוד</h3>
                         </section>
                         <a href="#connect"><button className="contact-btn">דברו איתנו</button></a>
                     </div>

@@ -17,6 +17,10 @@
     display: flex;
     flex-direction: column;
     place-items: center;
+}
+
+.connect .logo p {
+    
     font-family: Amatic-Bold;
 }
 
