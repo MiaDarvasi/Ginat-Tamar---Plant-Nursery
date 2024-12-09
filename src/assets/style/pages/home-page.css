@@ -3,3 +3,25 @@
     flex-direction: column;
     gap: 4rem;
 }
+
+._access-icon {
+    background: none !important;
+    background-color: var(--green2-dark) !important;
+    box-shadow: none !important;
+    border-radius: 50% !important;
+    padding: 0.2rem !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.2) !important;
+    right: 15px !important;
+}
+
+._access-menu ._menu-btn {
+    display: none !important;
+}
+
+._access-menu {
+    bottom: 1rem !important;
+    right: 1rem !important;
+}

@@ -16,7 +16,7 @@ export function Connect() {
         <p dir="rtl">דרך בית לחם 34, ירושלים</p>
         <section className="connect-call">
             <a href="tel:02-6710335"><img src={phone} /></a>
-            <a href="tel:02-6710335"><tel>02-6710335</tel></a>
+            <a href="tel:02-6710335">02-6710335</a>
         </section>
         <section className="connect-social">
             <a href="https://www.instagram.com/ginat_tamar_nursery/" target="blank"><img src={ig} /></a>

@@ -9,6 +9,7 @@
 @import './pages/home-page.css';
 @import './pages/about.css';
 @import './pages/categories.css';
+@import './pages/crystal.css';
 
 /* Cmps */
 @import './cmps/app-header.css';

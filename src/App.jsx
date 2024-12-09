@@ -1,9 +1,12 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { useEffect } from 'react';
 
-import { AppHeader } from './cmps/AppHeader.jsx'
-import { Connect } from './cmps/Connect.jsx'
+import { Accessibility } from 'accessibility';
 
-import { HomePage } from './pages/HomePage.jsx'
+import { AppHeader } from './cmps/AppHeader.jsx';
+import { Connect } from './cmps/Connect.jsx';
+
+import { HomePage } from './pages/HomePage.jsx';
 import { ScrollToTop } from './cmps/ScrollToTop.jsx';
 import { About } from './pages/About.jsx';
 import { Categories } from './pages/Categories.jsx';
@@ -18,10 +21,14 @@ import { Vining } from './pages/categories/Vining.jsx';
 import { Trees } from './pages/categories/Trees.jsx';
 import { Flowers } from './pages/categories/Flowers.jsx';
 
-
-
-
 function App() {
+
+  useEffect(() => {
+    window.addEventListener('load', function() {
+      new Accessibility();
+  }, false);
+  }, []);
+
   return (
     <Router>
       <ScrollToTop />

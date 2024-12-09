@@ -7,7 +7,6 @@ export function Succulents() {
             <h2>הרכבות</h2>
             <h2>צבעוניים</h2>
             <h2>פורחים</h2>
-            <h2>עמידים</h2>
         </section>
     </>
 }

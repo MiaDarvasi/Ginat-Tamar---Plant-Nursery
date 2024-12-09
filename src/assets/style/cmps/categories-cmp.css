@@ -25,9 +25,10 @@
 .categories-cmp .category-card h1 {
     position: absolute;
     top: 1rem;
-    right: 2rem;
+    right: 0rem;
 
     margin: 0;
+    margin-inline: 2rem;
 
     color: white;
     font-size: 2rem;
