@@ -1,5 +1,8 @@
 .crystal {
     font-family: Amatic-Bold;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
 }
 
 .crystal h2 {
@@ -7,15 +10,27 @@
     margin: 0;
     margin-block-start: 2rem;
     margin-block-end: 0.5rem;
+    text-align: center;
+}
+
+.crystal .crystal-title-description {
+    text-align: center;
+    font-family: Noto-Thin;
+    margin: 0;
+    margin-block-end: 2rem;
+    margin-inline: 5rem;
+    max-width: 1000px;
 }
 
 .crystal-list {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 1rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1.5rem;
+    max-width: 1100px;
+    margin-inline: 5rem;
 }
 
-.crystal-list .crystal-item {
+/* .crystal-list .crystal-item {
     display: flex;
     flex-direction: column;
     place-items: center;
@@ -37,14 +52,73 @@
     height: auto;
     object-fit: cover;
     transition: opacity 0.3s ease;
+} */
+
+
+
+/* TEST */
+
+.crystal-list .crystal-item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    text-align: center;
+    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.2);
 }
+
+.crystal-list .crystal-item:hover {
+    cursor: pointer;
+}
+
+.crystal-list .crystal-item img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    filter: brightness(65%);
+    transition: 0.4s;
+}
+
+.crystal-list .crystal-item:hover img {
+    filter: brightness(100%);
+}
+
+.crystal-list .crystal-item h1 {
+    position: absolute;
+    top: 0rem;
+    right: 0rem;
+
+    margin: 0;
+    margin-inline: 2rem;
+
+    color: white;
+    font-size: 2rem;
+    font-family: Amatic-Regular;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.9);
+    z-index: 2;
+}
+
+.crystal-list .crystal-item h1::after {
+    content: "";
+    display: block;
+    width: 60%;
+    height: 2px;
+    background-color: white;
+    margin-top: 0.5rem;
+}
+
+/* TEST */
+
+
 
 .crystal-list .crystal-item-description p {
     font-family: Noto-Thin;
     display: none;
     transition: opacity 0.5s ease;
     opacity: 0;
-    margin: 1rem;
+    margin-inline: 1rem;
+    margin-block: 0.5rem;
+    font-size: 0.8rem;
 }
 
 .crystal-list .crystal-item-description {
@@ -52,7 +126,7 @@
 }
 
 .crystal-list .crystal-item-description h3 {
-    font-size: 2rem;
+    /* font-size: 2rem; */
     margin: 0;
     margin-block: 0.5rem;
 }

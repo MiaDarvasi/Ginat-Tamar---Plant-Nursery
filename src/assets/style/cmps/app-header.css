@@ -105,9 +105,27 @@
     transition: 0.4s;
 }
 
+.app-header .active {
+    color: var(--green1-dark);
+}
+
 .app-header nav a:hover {
     cursor: pointer;
-    color: var(--green2-dark);
+    color: var(--green1-dark);
+}
+
+.app-header .active::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--green1-dark);
+    width: 100%;
+    height: 2px;
+    transition: 0.4s;
+    visibility: visible;
+    opacity: 1;
 }
 
 .app-header nav a::after {

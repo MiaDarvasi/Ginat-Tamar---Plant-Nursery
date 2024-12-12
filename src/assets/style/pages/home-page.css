@@ -6,7 +6,7 @@
 
 ._access-icon {
     background: none !important;
-    background-color: var(--green2-dark) !important;
+    background-color: var(--green1-dark) !important;
     box-shadow: none !important;
     border-radius: 50% !important;
     padding: 0.2rem !important;
@@ -17,11 +17,34 @@
     right: 15px !important;
 }
 
-._access-menu ._menu-btn {
+/* ._access-menu ._menu-btn {
     display: none !important;
+} */
+
+._access-menu ._menu-reset-btn {
+    display: none;
 }
+
+._access-menu ._menu-close-btn {
+    color: gray !important;
+}
+
 
 ._access-menu {
     bottom: 1rem !important;
     right: 1rem !important;
+    font-family: Noto-Thin !important;
 }
+
+._access-menu ._text-center {
+    font-family: Noto-Regular !important;
+}
+/* 
+._access-menu .close {
+    z-index: -1 !important;
+    width: 0 !important;
+    opacity: 0 !important;
+    background-color: transparent !important;
+    left: calc(-1* var(--_access-menu-left), unset) !important;
+    right: calc(-1* var(--_access-menu-width, 25vw)) !important;
+} */
