@@ -19,7 +19,7 @@
     margin: 0;
     margin-block-end: 2rem;
     margin-inline: 5rem;
-    max-width: 1000px;
+    max-width: 1100px;
 }
 
 .crystal-list {
@@ -107,10 +107,6 @@
     margin-top: 0.5rem;
 }
 
-/* TEST */
-
-
-
 .crystal-list .crystal-item-description p {
     font-family: Noto-Thin;
     display: none;
@@ -158,4 +154,8 @@
 
 .crystal-item .show-description {
     flex-direction: column;
+}
+
+.crystal .crystal-disclaimer {
+    font-family: Noto-Condensed-Medium;
 }

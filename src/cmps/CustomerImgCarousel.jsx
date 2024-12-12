@@ -4,16 +4,22 @@ import 'react-multi-carousel/lib/styles.css';
 import flowers from "../assets/imgs/flowers1.png";
 
 
-export function ImgCarousel() {
+import  cus1  from '../assets/imgs/cusimgs/cus1.jpg';
+import  cus2  from '../assets/imgs/cusimgs/cus2.jpg';
+import  cus3  from '../assets/imgs/cusimgs/cus3.jpg';
+
+
+
+export function CustomerImgCarousel() {
 
     const responsive = {
         superLargeDesktop: {
             breakpoint: { max: 4000, min: 3000 },
-            items: 2
+            items: 1
         },
         desktop: {
             breakpoint: { max: 3000, min: 1000 },
-            items: 2
+            items: 1
         },
         tablet: {
             breakpoint: { max: 1000, min: 464 },
@@ -26,28 +32,17 @@ export function ImgCarousel() {
     };
 
     return <>
-        <section className="img-carousel">
+        <section className="customer-img-carousel">
             <h1>לקוחות מצלמים</h1>
             <Carousel responsive={responsive} infinite={true} className="skill-slider">
                 <div className="item">
-                    <img src={flowers} />
-                    <h5>Authentication & Authorization</h5>
+                    <img src={cus1} />
                 </div>
                 <div className="item">
-                    <img src={flowers} />
-                    <h5>Debugging Complex Issues</h5>
+                    <img src={cus2} />
                 </div>
                 <div className="item">
-                    <img src={flowers} />
-                    <h5>Responsive Design</h5>
-                </div>
-                <div className="item">
-                    <img src={flowers} />
-                    <h5>RESTful API</h5>
-                </div>
-                <div className="item">
-                    <img src={flowers} />
-                    <h5>Collaborative Work</h5>
+                    <img src={cus3} />
                 </div>
             </Carousel>
         </section>

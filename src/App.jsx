@@ -133,6 +133,7 @@ import { Pots } from './pages/categories/Pots.jsx';
 import { Vining } from './pages/categories/Vining.jsx';
 import { Trees } from './pages/categories/Trees.jsx';
 import { Flowers } from './pages/categories/Flowers.jsx';
+import { Watermark } from './cmps/Watermark.jsx';
 
 function App() {
 
@@ -183,6 +184,7 @@ function App() {
           <Route path="/gallery" element={<Gallery />} />
         </Routes>
         <Connect />
+        <Watermark />
       </div>
     </Router>
   );

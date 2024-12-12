@@ -1,16 +1,35 @@
 .connect {
     display: flex;
     flex-direction: column;
+    gap: 1.5rem;
     place-items: center;
     padding-block: 2rem;
     margin-block-start: 3rem;
     box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
     font-family: Amatic-Bold;
 }
+.connect-content {
+    /* display: grid;
+    grid-template-columns: 1fr 1fr 1fr; */
+    display: flex;
+    gap: 4rem;
+    align-items: start;
+    justify-items: start;
+}
+
+.connect-contact {
+    display: flex;
+    flex-direction: column;
+}
 
 .connect h1,
 .connect p {
     margin: 0;
+}
+
+.connect p,
+.connect a {
+    font-family: Noto-Thin;
 }
 
 .connect .logo {
@@ -20,7 +39,6 @@
 }
 
 .connect .logo p {
-    
     font-family: Amatic-Bold;
 }
 
@@ -39,6 +57,7 @@
     display: flex;
     align-items: center;
     gap: 0.5rem;
+    margin-block: 0.5rem;
 }
 
 .connect .connect-call a {
@@ -51,27 +70,26 @@
 }
 
 .connect .connect-call img {
-    max-width: 1.4rem;
+    max-width: 1.7rem;
     height: auto;
 }
 
 .connect .connect-social {
     display: flex;
     place-items: center;
-    gap: 1rem;
-    margin-block-start: 1rem;
+    gap: 0.5rem;
 }
 
 .connect .connect-social a {
-    max-width: 2rem;
-    max-height: 2rem;
+    max-width: 1.7rem;
+    max-height: 1.7rem;
 }
 
 .connect .connect-social img {
     background-color: var(--green1);
     border-radius: 50%;
-    max-width: 2rem;
-    max-height: 2rem;
+    max-width: 1.7rem;
+    max-height: 1.7rem;
     padding: 0.2rem;
     transition: 0.4s;
 }
@@ -83,4 +101,30 @@
 
 .connect .connect-social .fb {
     padding: 0.5rem;
+}
+
+.connect .connect-opening-hours h2 {
+    margin: 0;
+    font-size: 1.4rem;
+}
+
+.connect h1 {
+    font-size: 1.2rem;
+    font-family: Amatic-Regular;
+}
+
+.connect .connect-opening-hours-content {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.connect hr {
+    border: none;
+    border-bottom: 0.5px solid var(--green1-dark);
+    margin: 0;
+    margin-block: 0.5rem;
+}
+
+.connect .connect-info {
+    max-width: 15rem;
 }

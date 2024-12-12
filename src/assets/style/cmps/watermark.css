@@ -1,0 +1,42 @@
+.watermark {
+    padding-block: 0.8rem;
+    display: flex;
+    justify-content: start;
+    background-color: white;
+    border: 0.5px solid rgb(221, 220, 220);
+}
+
+.watermark-content {
+    display: flex;
+    place-items: end;
+    margin-inline: 1rem;
+}
+
+.watermark-content a {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    padding: 0.3rem;
+    border-radius: 40px;
+}
+
+.watermark-content a:hover {
+    cursor: pointer;
+}
+
+.watermark-content a:hover img {
+    scale: 1.1;
+}
+
+.watermark img {
+    width: 1.5rem;
+    height: auto;
+    transition: 0.3s;
+}
+
+.watermark p {
+    margin: 0;
+    padding: 0.3rem;
+    font-size: 0.8rem;
+}
+

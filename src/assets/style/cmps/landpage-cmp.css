@@ -46,12 +46,12 @@
     align-items: center;
 }
 
-.skill-slider {
+.landpage-cmp .skill-slider {
     position: relative;
     width: 100%;
 }
 
-.skill-slider .item {
+.landpage-cmp .skill-slider .item {
     display: flex;
     gap: 1rem;
     flex-direction: column;
@@ -61,11 +61,11 @@
     height: 100%;
 }
 
-.skill-slider .item .item-main-title {
+.landpage-cmp .skill-slider .item .item-main-title {
     font-size: 6rem;
 }
 
-.skill-slider .item .item-main-address {
+.landpage-cmp .skill-slider .item .item-main-address {
     font-size: 1rem;
     opacity: 0.9;
 }
@@ -110,20 +110,20 @@
     background-color: var(--green2);
 }
 
-.react-multiple-carousel__arrow {
+.landpage-cmp .react-multiple-carousel__arrow {
     background: transparent !important;
     background-color: rgba(255, 255, 255, 0.3) !important;
 }
 
-.react-multiple-carousel__arrow:hover {
+.landpage-cmp .react-multiple-carousel__arrow:hover {
     background-color: rgba(255, 255, 255, 0.5) !important;
 }
 
-.react-multiple-carousel__arrow--right {
+.landpage-cmp .react-multiple-carousel__arrow--right {
     right: calc(4% + 1px);
 }
 
-.react-multiple-carousel__arrow--left {
+.landpage-cmp .react-multiple-carousel__arrow--left {
     left: calc(4% + 1px);
 }
 
