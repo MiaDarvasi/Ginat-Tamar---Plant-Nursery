@@ -10,6 +10,8 @@
 @import './pages/about.css';
 @import './pages/categories.css';
 @import './pages/crystal.css';
+@import './pages/ctg.css';
+@import './pages/pots.css';
 
 /* Cmps */
 @import './cmps/app-header.css';

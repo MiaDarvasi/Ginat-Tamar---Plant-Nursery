@@ -30,34 +30,6 @@
     margin-inline: 5rem;
 }
 
-/* .crystal-list .crystal-item {
-    display: flex;
-    flex-direction: column;
-    place-items: center;
-    text-align: center;
-    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.2);
-    border-radius: 15px;
-    overflow: hidden;
-    cursor: pointer;
-    position: relative;
-    transition: transform 0.3s ease;
-}
-
-.crystal-item:hover {
-    transform: scale(1.02);
-}
-
-.crystal-list .crystal-item img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    transition: opacity 0.3s ease;
-} */
-
-
-
-/* TEST */
-
 .crystal-list .crystal-item {
     position: relative;
     display: flex;
@@ -65,6 +37,7 @@
     place-items: center;
     text-align: center;
     box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
 }
 
 .crystal-list .crystal-item:hover {
@@ -81,6 +54,7 @@
 
 .crystal-list .crystal-item:hover img {
     filter: brightness(100%);
+    scale: 1.1;
 }
 
 .crystal-list .crystal-item h1 {
@@ -122,7 +96,6 @@
 }
 
 .crystal-list .crystal-item-description h3 {
-    /* font-size: 2rem; */
     margin: 0;
     margin-block: 0.5rem;
 }

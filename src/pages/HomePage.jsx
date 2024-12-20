@@ -11,7 +11,7 @@ export function HomePage() {
     <section className="home-page">
         <LandpageCmp />
         <CategoriesCmp />
-        <CustomerImgCarousel />
+        {/* <CustomerImgCarousel /> */}
     </section>
     </>
 }

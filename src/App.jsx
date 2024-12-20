@@ -114,8 +114,6 @@ import { useEffect } from 'react';
 
 import { Accessibility } from 'accessibility';
 
-import { toggleMenu } from './main.js';
-
 import { AppHeader } from './cmps/AppHeader.jsx';
 import { Connect } from './cmps/Connect.jsx';
 
@@ -125,6 +123,7 @@ import { About } from './pages/About.jsx';
 import { Categories } from './pages/Categories.jsx';
 import { Crystal } from './pages/Crystal.jsx';
 import { Gallery } from './pages/Gallery.jsx';
+
 
 import { Succulents } from './pages/categories/Succulents.jsx';
 import { Herbs } from './pages/categories/Herbs.jsx';

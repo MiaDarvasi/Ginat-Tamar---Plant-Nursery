@@ -1,0 +1,116 @@
+.ctg {
+    font-family: Amatic-Regular;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.ctg h1 {
+    font-family: Amatic-Bold;
+    font-size: 2.2rem;
+    margin: 0;
+    margin-block-start: 2rem;
+}
+
+.ctg h2 {
+    margin: 0;
+    margin-block-start: 1.5rem;
+}
+
+.ctg p {
+    font-family: Noto-Thin;
+    margin: 0;
+}
+
+.ctg h3 {
+    font-size: 1.5rem;
+    /* margin: 1rem; */
+}
+
+/* .ctg .ctg-example-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 2rem;
+
+}
+
+.ctg .ctg-example-list .ctg-example-item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    place-items: center;
+    text-align: center;
+    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    padding: 0.2rem;
+}
+
+.ctg .ctg-example-list .ctg-example-item:hover {
+    cursor: pointer;
+}
+
+.ctg .ctg-example-list .ctg-example-item p {
+    margin: 1rem;
+    margin-block-start: 0;
+}
+
+.ctg .ctg-example-list .ctg-example-item img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    filter: brightness(65%);
+    transition: 0.4s;
+}
+
+.ctg .ctg-example-list .ctg-example-item:hover img {
+    filter: brightness(110%);
+} */
+
+.ctg .ctg-disclaimer {
+    font-family: Noto-Regular;
+    font-size: 0.8rem;
+}
+
+/* TEST */
+
+.ctg .skill-slider {
+    position: relative;
+    max-width: 90vw;
+    display: flex;
+    gap: 1rem;
+}
+
+.ctg .skill-slider .item {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    justify-content: center;
+    max-width: 100%;
+    height: 100%;
+}
+
+.ctg .skill-slider img {
+    max-width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    padding: 0.5rem;
+    filter: brightness(110%);
+}
+
+.ctg .skill-slider h3 {
+    margin: 0;
+    font-family: Noto-Thin;
+}
+
+.ctg .skill-slider .react-multiple-carousel__arrow--right {
+    right: 2% !important;
+    z-index: 10 !important;
+}
+
+.ctg .skill-slider .react-multiple-carousel__arrow--left {
+    left: 2% !important;
+    z-index: 10 !important;
+}
+
+/* TEST */

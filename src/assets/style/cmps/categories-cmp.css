@@ -7,6 +7,7 @@
 
 .category-card {
     position: relative;
+    overflow: hidden;
 }
 
 .category-card:hover {
@@ -23,6 +24,7 @@
 
 .categories-cmp .category-card:hover img {
     filter: brightness(100%);
+    scale: 1.05;
 }
 
 .categories-cmp .category-card h1 {
