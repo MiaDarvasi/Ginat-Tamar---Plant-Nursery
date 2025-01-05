@@ -136,31 +136,31 @@ import { Watermark } from './cmps/Watermark.jsx';
 
 function App() {
 
-  useEffect(() => {
-    const labels = {
-      menuTitle: ' תפריט נגישות',
-      increaseText: 'הגדל גודל גופן',
-      decreaseText: 'הקטן גודל גופן',
-      increaseTextSpacing: 'הגדל ריווח טקסט',
-      decreaseTextSpacing: 'הקטן ריווח טקסט',
-      increaseLineHeight: 'הגדל גובה שורה',
-      decreaseLineHeight: 'הקטן גובה שורה',
-      invertColors: 'הפוך צבעים',
-      grayHues: 'גוונים אפורים',
-      underlineLinks: 'קו תחתון לקישורים',
-      bigCursor: 'סמן גדול',
-      readingGuide: 'מדריך קריאה',
-      textToSpeech: 'טקסט לדיבור',
-      disableAnimations: 'השבתת אנימציות',
-      hotkeyPrefix: 'קיצור דרך:'
-    };
+  // useEffect(() => {
+  //   const labels = {
+  //     menuTitle: ' תפריט נגישות',
+  //     increaseText: 'הגדל גודל גופן',
+  //     decreaseText: 'הקטן גודל גופן',
+  //     increaseTextSpacing: 'הגדל ריווח טקסט',
+  //     decreaseTextSpacing: 'הקטן ריווח טקסט',
+  //     increaseLineHeight: 'הגדל גובה שורה',
+  //     decreaseLineHeight: 'הקטן גובה שורה',
+  //     invertColors: 'הפוך צבעים',
+  //     grayHues: 'גוונים אפורים',
+  //     underlineLinks: 'קו תחתון לקישורים',
+  //     bigCursor: 'סמן גדול',
+  //     readingGuide: 'מדריך קריאה',
+  //     textToSpeech: 'טקסט לדיבור',
+  //     disableAnimations: 'השבתת אנימציות',
+  //     hotkeyPrefix: 'קיצור דרך:'
+  //   };
 
-    const options = {
-      labels: labels,
-    };
+  //   const options = {
+  //     labels: labels,
+  //   };
 
-    const accessibility = new Accessibility(options);
-  }, []);
+  //   const accessibility = new Accessibility(options);
+  // }, []);
 
   return (
     <Router>

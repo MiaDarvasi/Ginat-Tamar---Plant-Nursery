@@ -12,6 +12,7 @@
 @import './pages/crystal.css';
 @import './pages/ctg.css';
 @import './pages/pots.css';
+@import './pages/gallery.css';
 
 /* Cmps */
 @import './cmps/app-header.css';

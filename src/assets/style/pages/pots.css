@@ -30,7 +30,7 @@
     grid-template-columns: 1fr 2fr;
     gap: 1rem;
     place-items: center;
-    background: linear-gradient(to left, rgba(238, 204, 80, 0.2) 0%, rgba(133, 186, 64, 0) 100%);
+    background: linear-gradient(to left, rgb(249, 255, 241) 0%, rgba(133, 186, 64, 0) 100%);
 }
 
 .pots .pots-type img {
