@@ -3,17 +3,20 @@ import React, { useState, useEffect } from "react";
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 
-import strawberry from "../assets/imgs/strawberry.png";
-import pottery from "../assets/imgs/pottery.png";
-import flowers from "../assets/imgs/flowers1.png";
-import succulents from "../assets/imgs/succulents1.jpg";
+import img1 from "../assets/imgs/strawberry.png";
+import img2 from "../assets/imgs/pottery.png";
+import img3 from "../assets/imgs/galleryImgs/galleryimg20.jpg";
+import img4 from "../assets/imgs/galleryImgs/galleryimg11.jpg";
+import img5 from "../assets/imgs/galleryImgs/galleryimg3.jpg";
+import img6 from "../assets/imgs/galleryImgs/galleryimg16.jpg";
+
 
 
 
 export function LandpageCmp() {
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
-    const images = [strawberry, pottery, flowers, succulents];
+    const images = [img1, img2, img3, img4, img5, img6];
 
     const responsive = {
         superLargeDesktop: {

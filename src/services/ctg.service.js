@@ -1,5 +1,6 @@
 export {
     vining,
+    special
 }
 
 const vining = [
@@ -29,7 +30,7 @@ const vining = [
     }
 ]
 
-export const special = [
+const special = [
     {
         name: "",
         description: "",

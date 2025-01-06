@@ -21,8 +21,6 @@ body {
     
     font-family: Montserrat-Regular;
     color: var(--main-dark);
-
-    /* background: linear-gradient(to right, var(--main3) 10%, var(--main1) 90%); */
 }
 
 .App>* {
@@ -38,4 +36,16 @@ li,
 a,
 button {
     all: unset;
+}
+
+
+
+@media (max-width: 450px) {
+    .App {
+        display: grid;
+        grid-template-columns: minmax(12px, 1fr) minmax(auto, 1400px) minmax(12px, 1fr);
+        
+        font-family: Montserrat-Regular;
+        color: var(--main-dark);
+    }
 }

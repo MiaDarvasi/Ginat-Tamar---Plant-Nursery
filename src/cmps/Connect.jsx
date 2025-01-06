@@ -7,13 +7,13 @@ import trees from "../assets/imgs/trees.svg";
 
 
 export function Connect() {
-    return <section className="connect full" id="connect">
+    return <section className="connect full">
         <section className="logo">
             <img src={trees} alt="logo" />
             <p>גינת תמר</p>
         </section>
         <section className="connect-content">
-            <section className="connect-contact" dir="rtl">
+            <section className="connect-contact" dir="rtl" id="connect">
                 <h1>דרכי התקשרות</h1>
                 <hr />
                 <p dir="rtl">דרך בית לחם 34, ירושלים</p>

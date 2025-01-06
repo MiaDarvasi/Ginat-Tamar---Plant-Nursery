@@ -6,7 +6,7 @@ export function Watermark() {
             <a href="https://miadarvasi.netlify.app/" target="blank">
                 <img src={mylogo} />
             </a>
-            <p>Powered by Mia Darvasi</p>
+            <p>Powered by Mia</p>
         </section>
     </section>
 }

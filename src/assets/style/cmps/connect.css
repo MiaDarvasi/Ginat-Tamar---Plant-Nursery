@@ -4,10 +4,12 @@
     gap: 1.5rem;
     place-items: center;
     padding-block: 2rem;
+    padding-inline: 1rem;
     margin-block-start: 3rem;
     box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
     font-family: Amatic-Bold;
 }
+
 .connect-content {
     /* display: grid;
     grid-template-columns: 1fr 1fr 1fr; */
@@ -127,4 +129,19 @@
 
 .connect .connect-info {
     max-width: 15rem;
+}
+
+
+@media (max-width: 450px) {
+    .connect-content {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 4rem;
+        align-items: start;
+        justify-items: start;
+    }
+
+    .connect-content>* {
+        width: 100%;
+    }
 }

@@ -36,8 +36,6 @@ import galleryimg35 from "../assets/imgs/galleryImgs/galleryimg35.jpg";
 import galleryimg36 from "../assets/imgs/galleryImgs/galleryimg36.jpg";
 import galleryimg37 from "../assets/imgs/galleryImgs/galleryimg37.jpg";
 import galleryimg38 from "../assets/imgs/galleryImgs/galleryimg38.jpg";
-import galleryimg39 from "../assets/imgs/galleryImgs/galleryimg39.jpg";
-import galleryimg40 from "../assets/imgs/galleryImgs/galleryimg40.jpg";
 
 
 
@@ -52,9 +50,9 @@ export function Gallery() {
         galleryimg6,
         galleryimg7,
         galleryimg8,
+        galleryimg11,
         galleryimg9,
         galleryimg10,
-        galleryimg11,
         galleryimg12,
         galleryimg13,
         galleryimg14,
@@ -82,8 +80,6 @@ export function Gallery() {
         galleryimg36,
         galleryimg37,
         galleryimg38,
-        galleryimg39,
-        galleryimg40,
     ];
 
     return (
