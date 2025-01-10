@@ -7,6 +7,7 @@ import flowers from "../assets/imgs/flowers.jpg";
 import succulents from "../assets/imgs/succulents.jpg";
 import vining from "../assets/imgs/vining.jpg";
 import herbs from "../assets/imgs/herbs.jpg";
+import fruit from "../assets/imgs/fruit.jpg";
 
 
 export function CategoriesCmp() {
@@ -42,7 +43,7 @@ export function CategoriesCmp() {
             </Link>
             <Link to="/categories/trees">
                 <div className="category-card">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT605miDfycXgoBIG-tUSOv7OK09uS6zxBj5w&s" />
+                    <img src={fruit}/>
                     <h1 dir="rtl">עצים ושיחים</h1>
                     <div className="overlay"></div>
                 </div>

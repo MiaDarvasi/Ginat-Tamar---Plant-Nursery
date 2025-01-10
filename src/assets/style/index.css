@@ -13,6 +13,7 @@
 @import './pages/ctg.css';
 @import './pages/pots.css';
 @import './pages/gallery.css';
+@import './pages/herbs.css';
 
 /* Cmps */
 @import './cmps/app-header.css';

@@ -1,0 +1,59 @@
+.herbs {
+    display: flex;
+    flex-direction: column;
+}
+
+.herbs h1,
+.herbs h2 {
+    font-family: Amatic-Bold;
+    margin: 0;
+}
+
+.herbs h1 {
+    margin-block-start: 2rem;
+}
+
+.herbs h2 {
+    font-size: 1.4rem;
+}
+
+.herbs h3 {
+    font-family: Noto-Thin;
+    font-size: 1rem;
+    margin: 0;
+    margin-block-end: 2rem;
+    margin-block-start: 0.5rem;
+}
+
+.herbs p {
+    font-family: Noto-Thin;
+    max-width: 30vw;
+    margin: 0;
+}
+
+.herb-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0.5rem;
+}
+
+.herbs img {
+    height: 100%;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}
+
+.herbs .herb {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: start;
+    align-items: center;
+    gap: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.herbs .herb .herb-description {
+    padding-inline-end: 0.5rem;
+    padding-block-end: 0.5rem;
+}
