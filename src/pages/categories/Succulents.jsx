@@ -1,7 +1,7 @@
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 
-import { vining, blooming, colorful } from "../../services/ctg.service.js"
+import { vining, blooming, colorful } from "../../services/ctg.service.js";
 
 export function Succulents() {
     
@@ -24,6 +24,12 @@ export function Succulents() {
         }
     };
 
+    const categories = [
+        { title: 'פורחים', items: blooming },
+        { title: 'נשפכים', items: vining },
+        { title: 'צבעוניים ומיוחדים', items: colorful }
+    ];
+
     return (
         <>
             <section dir="rtl" className="ctg ctg-succelents">
@@ -31,41 +37,19 @@ export function Succulents() {
                 <p>אלו רק דוגמאות בודדות מהמבחר הרחב של הקקטוסים והסוקולנטים שיש למשתלה להציע. אם מצאתם משהו באתר שאתם אוהבים, אל תהססו להראות לנו, ואם לא נמצא בדיוק את הצמח שחיפשתם, אנחנו תמיד כאן כדי להמליץ לכם על משהו דומה!</p>
                 <p className='ctg-disclaimer'>*מלאי הצמחים במשתלה משתנה לפי עונות ואספקה.</p>
                 
-                <section className='ctg-sec'>
-                    <h2>פורחים</h2>
-                    <Carousel responsive={responsive} infinite={true} className="skill-slider">
-                        {blooming.map((plant, index) => (
-                            <div className="item" key={index}>
-                                <img src={plant.imgSrc} alt={plant.name} />
-                                <h3>{plant.name}</h3>
-                            </div>
-                        ))}
-                    </Carousel>
-                </section>
-
-                <section className='ctg-sec'>
-                    <h2>נשפכים</h2>
-                    <Carousel responsive={responsive} infinite={true} className="skill-slider">
-                        {vining.map((plant, index) => (
-                            <div className="item" key={index}>
-                                <img src={plant.imgSrc} alt={plant.name} />
-                                <h3>{plant.name}</h3>
-                            </div>
-                        ))}
-                    </Carousel>
-                </section>
-
-                <section className='ctg-sec'>
-                    <h2>צבעוניים ומיוחדים</h2>
-                    <Carousel responsive={responsive} infinite={true} className="skill-slider">
-                        {colorful.map((plant, index) => (
-                            <div className="item" key={index}>
-                                <img src={plant.imgSrc} alt={plant.name} />
-                                <h3>{plant.name}</h3>
-                            </div>
-                        ))}
-                    </Carousel>
-                </section>
+                {categories.map((category, index) => (
+                    <section className='ctg-sec' key={index}>
+                        <h2>{category.title}</h2>
+                        <Carousel responsive={responsive} infinite={true} className="skill-slider">
+                            {category.items.map((plant, plantIndex) => (
+                                <div className="item" key={plantIndex}>
+                                    <img src={plant.imgSrc} alt={plant.name} />
+                                    <h3>{plant.name}</h3>
+                                </div>
+                            ))}
+                        </Carousel>
+                    </section>
+                ))}
 
                 <h2>הרכבות</h2>
             </section>

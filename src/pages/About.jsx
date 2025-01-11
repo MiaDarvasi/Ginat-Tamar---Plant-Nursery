@@ -1,6 +1,3 @@
-
-
-
 export function About() {
     return <section className="about" id="about" dir="rtl">
         <p>גינת תמר היא משתלה ירושלמית ותיקה שפועלת כבר מעל ארבעה עשורים. ממוקמת בדרך בית לחם, ליד מתחם התחנה.</p>

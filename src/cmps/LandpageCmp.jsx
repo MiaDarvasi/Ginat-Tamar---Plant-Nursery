@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 
@@ -9,9 +8,6 @@ import img3 from "../assets/imgs/galleryImgs/galleryimg20.jpg";
 import img4 from "../assets/imgs/galleryImgs/galleryimg11.jpg";
 import img5 from "../assets/imgs/galleryImgs/galleryimg3.jpg";
 import img6 from "../assets/imgs/galleryImgs/galleryimg16.jpg";
-
-
-
 
 export function LandpageCmp() {
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -36,7 +32,50 @@ export function LandpageCmp() {
             items: 1
         }
     };
-
+    
+    const carouselItems = [
+        {
+            title: 'גינת תמר',
+            subtitle: 'דרך בית לחם 34, ירושלים',
+            description: 'המשתלה הירושלמית הותיקה ביותר, פועלת מאז 1984 ומציעה מגוון רחב של צמחים איכותיים בשירות אישי ומקצועי.',
+        },
+        {
+            title: 'צמחי בית',
+            subtitle: 'אווירה ירוקה בתוך הבית',
+            description: '',
+        },
+        {
+            title: 'עצי פרי',
+            subtitle: 'פירות הדר, מטפסים, רב עונתיים ועוד',
+            description: '',
+        },
+        {
+            title: 'תבלינים',
+            subtitle: 'תבלינים לתה, סלט, בישול ועוד',
+            description: '',
+        },
+        {
+            title: 'פרחים לגינה',
+            subtitle: 'עונתיים ורב שנתיים במגוון גדלים',
+            description: '',
+        },
+        {
+            title: 'סוקולנטים',
+            subtitle: 'מבחר ענק של סוקולנטים צבעוניים ומיוחדים',
+            description: '',
+        },
+        {
+            title: 'עציצים וכלים',
+            subtitle: 'עציצי חרס, קרמיקה, פלסטיק ועוד',
+            description: '',
+        },
+        {
+            title: 'כלי גינון והשקייה',
+            subtitle: 'צינורות וטפטפות, עט חפירה, מעדר, כפפות ועוד',
+            description: '',
+        }
+    ];
+    
     useEffect(() => {
         const intervalId = setInterval(() => {
             setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
@@ -44,6 +83,7 @@ export function LandpageCmp() {
 
         return () => clearInterval(intervalId);
     }, []);
+
 
     return (
         <section className="landpage-cmp">
@@ -58,63 +98,18 @@ export function LandpageCmp() {
             ))}
             <div className="text-overlay">
                 <Carousel responsive={responsive} infinite={true} className="skill-slider">
-                    <div className="item">
-                        <section>
-                            <h2 className="item-main-title">גינת תמר</h2>
-                            <h3 className="item-main-address" dir="rtl">דרך בית לחם 34, ירושלים</h3>
-                            <p dir="rtl">המשתלה הירושלמית הותיקה ביותר, פועלת מאז 1984 ומציעה מגוון רחב של צמחים איכותיים בשירות אישי ומקצועי.</p>
-                        </section>
-                        <a href="#connect"><button className="contact-btn">דברו איתנו</button></a>
-                    </div>
-                    <div className="item">
-                        <section>
-                            <h2>צמחי בית</h2>
-                            <h3 dir="rtl">אווירה ירוקה בתוך הבית</h3>
-                        </section>
-                        <a href="#connect"><button className="contact-btn">דברו איתנו</button></a>
-                    </div>
-                    <div className="item">
-                        <section>
-                            <h2>עצי פרי</h2>
-                            <h3 dir="rtl">פירות הדר, מטפסים, רב עונתיים ועוד</h3>
-                        </section>
-                        <a href="#connect"><button className="contact-btn">דברו איתנו</button></a>
-                    </div>
-                    <div className="item">
-                        <section>
-                            <h2>תבלינים</h2>
-                            <h3 dir="rtl">תבלינים לתה, סלט, בישול ועוד</h3>
-                        </section>
-                        <a href="#connect"><button className="contact-btn">דברו איתנו</button></a>
-                    </div>
-                    <div className="item">
-                        <section>
-                            <h2>פרחים לגינה</h2>
-                            <h3 dir="rtl">עונתיים ורב שנתיים במגוון גדלים</h3>
-                        </section>
-                        <a href="#connect"><button className="contact-btn">דברו איתנו</button></a>
-                    </div>
-                    <div className="item">
-                        <section>
-                            <h2>סוקולנטים</h2>
-                            <h3 dir="rtl">מבחר ענק של סוקולנטים צבעוניים ומיוחדים</h3>
-                        </section>
-                        <a href="#connect"><button className="contact-btn">דברו איתנו</button></a>
-                    </div>
-                    <div className="item">
-                        <section>
-                            <h2>עציצים וכלים</h2>
-                            <h3 dir="rtl">עציצי חרס, קרמיקה, פלסטיק ועוד</h3>
-                        </section>
-                        <a href="#connect"><button className="contact-btn">דברו איתנו</button></a>
-                    </div>
-                    <div className="item">
-                        <section>
-                            <h2>כלי גינון והשקייה</h2>
-                            <h3 dir="rtl">צינורות וטפטפות, עט חפירה, מעדר, כפפות ועוד</h3>
-                        </section>
-                        <a href="#connect"><button className="contact-btn">דברו איתנו</button></a>
-                    </div>
+                    {carouselItems.map((item, index) => (
+                        <div className="item" key={index}>
+                            <section>
+                                <h2 className="item-main-title">{item.title}</h2>
+                                {item.subtitle && <h3 className="item-main-address" dir="rtl">{item.subtitle}</h3>}
+                                {item.description && <p dir="rtl">{item.description}</p>}
+                            </section>
+                            <a href="#connect">
+                                <button className="contact-btn">דברו איתנו</button>
+                            </a>
+                        </div>
+                    ))}
                 </Carousel>
             </div>
         </section>

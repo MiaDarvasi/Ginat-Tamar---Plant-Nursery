@@ -3,9 +3,6 @@ import facebook from "../assets/imgs/icons/facebook.svg";
 import phone from "../assets/imgs/icons/phone.svg";
 import trees from "../assets/imgs/trees.svg";
 
-
-
-
 export function Connect() {
     return <section className="connect full">
         <section className="logo">
