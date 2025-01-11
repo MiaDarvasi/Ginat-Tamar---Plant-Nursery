@@ -57,3 +57,8 @@
     padding-inline-end: 0.5rem;
     padding-block-end: 0.5rem;
 }
+
+.herbs .disclaimer {
+    font-family: Noto-Condensed-Medium;
+    margin-block: 1rem;
+}
