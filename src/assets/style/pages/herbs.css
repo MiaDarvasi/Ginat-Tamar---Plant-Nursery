@@ -62,3 +62,21 @@
     font-family: Noto-Condensed-Medium;
     margin-block: 1rem;
 }
+
+@media (max-width: 600px) {
+    .herb-list {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1000px) {
+    .herb-list {
+        grid-template-columns: 2fr 2fr;
+    }
+}
+
+@media (min-width: 1001px) {
+    .herb-list {
+        grid-template-columns: 3fr 3fr 3fr;
+    }
+}

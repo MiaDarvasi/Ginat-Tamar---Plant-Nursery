@@ -156,7 +156,7 @@ const vining = [
 const blooming = [
     {
         name: "סטפליה",
-        imgSrc: "https://res.cloudinary.com/dn3rdygdn/image/upload/v1736618679/PXL_20241212_090137097_ccenae.jpg"
+        imgSrc: "https://res.cloudinary.com/dn3rdygdn/image/upload/v1736619094/galleryimg10_y9nvez.jpg"
     },
     {
         name: "הוורתיה",
