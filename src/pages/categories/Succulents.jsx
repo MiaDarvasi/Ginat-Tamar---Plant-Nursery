@@ -1,7 +1,7 @@
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 
-import { vining, blooming, colorful } from "../../services/ctg.service.js";
+import { vining, blooming, colorful, grafting } from "../../services/ctg.service.js";
 
 export function Succulents() {
     
@@ -26,8 +26,9 @@ export function Succulents() {
 
     const categories = [
         { title: 'פורחים', items: blooming },
+        { title: 'צבעוניים ומיוחדים', items: colorful },
         { title: 'נשפכים', items: vining },
-        { title: 'צבעוניים ומיוחדים', items: colorful }
+        { title: 'הרכבות', items: grafting },
     ];
 
     return (
@@ -50,8 +51,6 @@ export function Succulents() {
                         </Carousel>
                     </section>
                 ))}
-
-                <h2>הרכבות</h2>
             </section>
         </>
     );

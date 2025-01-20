@@ -35,6 +35,9 @@ export function OurSpecials() {
                             <img src="https://res.cloudinary.com/dn3rdygdn/image/upload/v1736618684/PXL_20241002_123809295_2_brayal.jpg" />
                         </div>
                         <div>
+                            <img src="https://res.cloudinary.com/dn3rdygdn/image/upload/v1737397769/20180413_140037_aelxoq.jpg" />
+                        </div>
+                        <div>
                             <img src="https://res.cloudinary.com/dn3rdygdn/image/upload/v1736619094/galleryimg10_y9nvez.jpg" />
                         </div>
                         <div>

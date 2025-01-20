@@ -4,8 +4,14 @@ export {
     galleryImages,
     vining,
     blooming,
-    colorful
+    colorful,
+    grafting,
+    colorfulIndoor,
+    strongIndoor,
+    safeForPets
 }
+
+// PAGES
 
 const herbs = [
     { name: "לוונדר", imgSrc: "https://res.cloudinary.com/dn3rdygdn/image/upload/v1736620195/lavender_g7mp4a.jpg", description: "לוונדר אוהב הרבה שמש ישירה כדי לצמוח בצורה טובה, ולכן כדאי למקם אותו במקום שטוף שמש במהלך רוב שעות היום." },
@@ -126,41 +132,47 @@ const galleryImages = [
     "https://res.cloudinary.com/dn3rdygdn/image/upload/v1736619143/galleryimg40_ciwltk.jpg",
 ]
 
+// SUCCULENTS
+
 const vining = [
     {
         name: "סנציו בננה",
-        description: "צמח שמתאים לבית או לחוץ, דורש שמש חלקית. יש להשקות כאשר האדמה מתייבשת ולהניח אותו במקום מואר. בעל עלים בשרניים בצורת בננה, עם קצב צימוח מהיר.",
-        imgSrc: "https://yarokatik.co.il/cdn/shop/products/image_55449c94-ec63-42a8-ade1-870e1d38cd02.jpg?v=1659080241&width=1000"
+        imgSrc: "https://res.cloudinary.com/dn3rdygdn/image/upload/v1737396835/IMG_6569_gjnegx.jpg"
     },
     {
         name: "סביון כדורי",
-        description: "צמח נשפך ועגול כמו פנינים, מתאים לבית מואר מאוד או למרפסת עם מעט שמש ישירה. יש להשקות כאשר האדמה כמעט יבשה.",
-        imgSrc: "https://yarokatik.co.il/cdn/shop/products/image_939308ad-a450-40bb-8e1b-c1c103bbae1c.jpg?v=1659249164&width=1000"
+        imgSrc: "https://res.cloudinary.com/dn3rdygdn/image/upload/v1737396823/IMG_6571_mmtwj5.jpg"
     },
     {
-        name: "ריפסליס",
-        description: "צמח ירוק, פופולרי ואהוב, שממנו צומחות זרועות ירוקות רבות שמתפתלות בצורה יפה. צמח רב-שנתי, חזק ועמיד באופן מרשים.",
-        imgSrc: "https://yarokatik.co.il/cdn/shop/files/08422D2F-37DB-4BCC-BB15-3DFFC6D9016E.jpg?v=1726496895&width=1000"
+        name: "לא יודעת",
+        imgSrc: "https://res.cloudinary.com/dn3rdygdn/image/upload/v1737396827/IMG_6572_ebttuz.jpg"
     },
     {
         name: "צורית",
-        description: "סוקולנט עם עלים בשרניים במגוון צורות וגוונים, מתאים לשמש מלאה. בתנאי צל, העלים יהפכו לירוקים. חלק מהמינים פורחים לתקופות."        ,
-        imgSrc: "https://shlomit-plants.co.il/wp-content/uploads/2023/08/16382211112-1.jpg"
+        imgSrc: "https://res.cloudinary.com/dn3rdygdn/image/upload/v1737396836/IMG_6567_cgzprz.jpg"
     },
     {
         name: "קרסולה",
-        imgSrc: "https://yarokatik.co.il/cdn/shop/files/61DD988F-50D1-4DE2-B6AE-86D4B7099BAD.jpg?v=1734075307&width=1000"
+        imgSrc: "https://res.cloudinary.com/dn3rdygdn/image/upload/v1737396828/IMG_6568_lbjhmb.jpg"
+    },
+    {
+        name: "סטפליה",
+        imgSrc: "https://res.cloudinary.com/dn3rdygdn/image/upload/v1737396830/IMG_6597_vi43to.jpg"
+    },
+    {
+        name: "לא יודעת",
+        imgSrc: "https://res.cloudinary.com/dn3rdygdn/image/upload/v1737396836/IMG_6570_piugbp.jpg"
     }
 ]
 
 const blooming = [
     {
-        name: "סטפליה",
-        imgSrc: "https://res.cloudinary.com/dn3rdygdn/image/upload/v1736619094/galleryimg10_y9nvez.jpg"
-    },
-    {
         name: "הוורתיה",
         imgSrc: "https://res.cloudinary.com/dn3rdygdn/image/upload/v1736618677/PXL_20241209_101724643_2_lhwxtn.jpg"
+    },
+    {
+        name: "לא יודעת",
+        imgSrc: "https://res.cloudinary.com/dn3rdygdn/image/upload/v1736619127/galleryimg30_bqa0kz.jpg"
     },
     {
         name: "סטפליה",
@@ -168,15 +180,23 @@ const blooming = [
     },
     {
         name: "סטפליה",
-        imgSrc: "https://res.cloudinary.com/dn3rdygdn/image/upload/v1736618679/PXL_20241212_090137097_ccenae.jpg"
-    },
-    {
-        name: "סטפליה",
         imgSrc: "https://res.cloudinary.com/dn3rdygdn/image/upload/v1736618684/PXL_20241002_123809295_2_brayal.jpg"
     },
     {
         name: "סטפליה",
-        imgSrc: "https://res.cloudinary.com/dn3rdygdn/image/upload/v1736618680/PXL_20241212_090506816_2_gjkqjp.jpg"
+        imgSrc: "https://res.cloudinary.com/dn3rdygdn/image/upload/v1736618679/PXL_20241212_090137097_ccenae.jpg"
+    },
+    {
+        name: "סטפליה",
+        imgSrc: "https://res.cloudinary.com/dn3rdygdn/image/upload/v1736619094/galleryimg10_y9nvez.jpg"
+    },
+    {
+        name: "לא יודעת",
+        imgSrc: "https://res.cloudinary.com/dn3rdygdn/image/upload/v1737397558/IMG_8161_ei6snc.jpg"
+    },
+    {
+        name: "לא יודעת",
+        imgSrc: "https://res.cloudinary.com/dn3rdygdn/image/upload/v1737397561/IMG_8158_s2xjnj.jpg"
     },
 ]
 
@@ -214,3 +234,207 @@ const colorful = [
         imgSrc: "https://res.cloudinary.com/dn3rdygdn/image/upload/v1736618678/PXL_20241204_113334762_fjisrm.jpg"
     },
 ]
+
+const grafting = [
+    {
+        name: "לא יודעת",
+        imgSrc: "https://res.cloudinary.com/dn3rdygdn/image/upload/v1737397755/IMG_9654_mn5nav.jpg"
+    },
+    {
+        name: "לא יודעת",
+        imgSrc: "https://res.cloudinary.com/dn3rdygdn/image/upload/v1737397755/IMG_8285_xdpju4.jpg"
+    },
+    {
+        name: "לא יודעת",
+        imgSrc: "https://res.cloudinary.com/dn3rdygdn/image/upload/v1737397769/20180413_140037_aelxoq.jpg"
+    },
+    {
+        name: "לא יודעת",
+        imgSrc: "https://res.cloudinary.com/dn3rdygdn/image/upload/v1737397768/20180409_124146_cweftg.jpg"
+    },
+    {
+        name: "לא יודעת",
+        imgSrc: "https://res.cloudinary.com/dn3rdygdn/image/upload/v1737397770/20180625_155805_eubfoi.jpg"
+    },
+    {
+        name: "לא יודעת",
+        imgSrc: "https://res.cloudinary.com/dn3rdygdn/image/upload/v1737397773/20180625_154527_zoqsot.jpg"
+    },
+    {
+        name: "לא יודעת",
+        imgSrc: "https://res.cloudinary.com/dn3rdygdn/image/upload/v1737397773/20180625_154603_p6vnow.jpg"
+    }, 
+    {
+        name: "לא יודעת",
+        imgSrc: "https://res.cloudinary.com/dn3rdygdn/image/upload/v1737397777/20180625_155322_rr9amu.jpg"
+    }
+]
+
+// INDOOR
+
+const colorfulIndoor = [
+    {
+        name: "היפואסטיס",
+        imgSrc: "https://res.cloudinary.com/dn3rdygdn/image/upload/v1736946495/IMG_6609_qepum7.jpg"
+    },
+    {
+        name: "אגלונמה",
+        imgSrc: "https://res.cloudinary.com/dn3rdygdn/image/upload/v1736948617/7D2FF512-AD28-4270-8E0F-8751AE7F7B21_2_qqsu94.jpg"
+    },
+    {
+        name: "בגוניה רקס",
+        imgSrc: "https://res.cloudinary.com/dn3rdygdn/image/upload/v1736946494/IMG_9359_hu9mpa.jpg"
+    },
+    {
+        name: "קלדיום",
+        imgSrc: "https://res.cloudinary.com/dn3rdygdn/image/upload/v1736946490/IMG_9326_opharh.jpg"
+    },
+    {
+        name: "דרצנה",
+        imgSrc: "https://res.cloudinary.com/dn3rdygdn/image/upload/v1736946487/IMG_1687_irlc3s.jpg"
+    },
+    {
+        name: "פפרומיה",
+        imgSrc: "https://res.cloudinary.com/dn3rdygdn/image/upload/v1736946466/F703AB8C-D6C8-4179-936C-E53A6A18E7E9_f8udbn.jpg"
+    },
+    {
+        name: "שפלרה",
+        imgSrc: "https://res.cloudinary.com/dn3rdygdn/image/upload/v1736946463/A3EC1100-2D26-4C73-BBAB-941EC1C0001D_ueez8w.jpg"
+    },
+    {
+        name: "אנטוריום",
+        imgSrc: "https://res.cloudinary.com/dn3rdygdn/image/upload/v1736946462/FB3E0252-2E51-4DFE-BB5C-81AF1E259BF7_wkuntb.jpg"
+    },
+    {
+        name: "קלתאה",
+        imgSrc: "https://res.cloudinary.com/dn3rdygdn/image/upload/v1736946464/B5D30CEA-AE24-4388-9C17-F22EC6B6091B_gwuy24.jpg"
+    },
+]
+
+const strongIndoor = [
+    {
+        name: "סנסיווריה",
+        imgSrc: "https://res.cloudinary.com/dn3rdygdn/image/upload/v1736946491/IMG_9332_s0sc4e.jpg"
+    },
+    {
+        name: "שרך בוסטון (מגוון)",
+        imgSrc: "https://res.cloudinary.com/dn3rdygdn/image/upload/v1736946489/IMG_9320_hnmoin.jpg"
+    },
+    {
+        name: "מונסטרה דליסיוסה",
+        imgSrc: "https://res.cloudinary.com/dn3rdygdn/image/upload/v1736946489/IMG_7650_dr0gr9.jpg"
+    },
+    {
+        name: "דיפנבכיה",
+        imgSrc: "https://res.cloudinary.com/dn3rdygdn/image/upload/v1736946466/BC31E5F1-652E-451B-AF79-FF7697729905_pw6asd.jpg"
+    },
+    {
+        name: "רפידופורה",
+        imgSrc: "https://res.cloudinary.com/dn3rdygdn/image/upload/v1736946460/8AE042FE-7FB9-4AC8-B1D6-5312408CB6E1_h4jkng.jpg"
+    },
+    {
+        name: "פוטוס",
+        imgSrc: "https://res.cloudinary.com/dn3rdygdn/image/upload/v1736948618/A3757410-9388-4FB6-A712-EB2E285C10E7_2_npvwmw.jpg"
+    },
+    {
+        name: "דקל",
+        imgSrc: "https://res.cloudinary.com/dn3rdygdn/image/upload/v1736946459/990318C7-33F6-4E00-9B6B-ECDB0525E2ED_mmao1y.jpg"
+    },
+    {
+        name: "סקינדפסוס פיקטוס",
+        imgSrc: "https://res.cloudinary.com/dn3rdygdn/image/upload/v1736946463/18E9B6DF-F183-4590-BA44-20A92BAD35BC_zq0wgn.jpg"
+    },
+]
+
+const safeForPets = [
+    {
+        name: "סיגלית אפריקאית",
+        imgSrc: "https://res.cloudinary.com/dn3rdygdn/image/upload/v1737400776/IMG_6599_xrannw.jpg"
+    },
+    {
+        name: "קלתאה",
+        imgSrc: "https://res.cloudinary.com/dn3rdygdn/image/upload/v1737398702/IMG_6591_jo9xrc.jpg"
+    },
+    {
+        name: "דקל",
+        imgSrc: "https://res.cloudinary.com/dn3rdygdn/image/upload/v1737398700/IMG_6589_thk26t.jpg"
+    },
+    {
+        name: "סחלב",
+        imgSrc: "https://res.cloudinary.com/dn3rdygdn/image/upload/v1737400771/IMG_6601_ikdd5a.jpg"
+    },
+    {
+        name: "ירקה",
+        imgSrc: "https://res.cloudinary.com/dn3rdygdn/image/upload/v1737398683/IMG_6588_jfv8ly.jpg"
+    },
+    {
+        name: "שרך בוסטון",
+        imgSrc: "https://res.cloudinary.com/dn3rdygdn/image/upload/v1737398671/IMG_6586_laxau5.jpg"
+    },
+    {
+        name: "פפרומיה",
+        imgSrc: "https://res.cloudinary.com/dn3rdygdn/image/upload/v1737398691/IMG_6592_ugwppg.jpg"
+    },
+    {
+        name: "שערות שולמית",
+        imgSrc: "https://res.cloudinary.com/dn3rdygdn/image/upload/v1737398688/IMG_6593_ruz29w.jpg"
+    },
+    {
+        name: "פפרומיה",
+        imgSrc: "https://res.cloudinary.com/dn3rdygdn/image/upload/v1737398701/IMG_6594_qrcunz.jpg"
+    },
+    {
+        name: "סחלב",
+        imgSrc: "https://res.cloudinary.com/dn3rdygdn/image/upload/v1737400774/IMG_6600_aieisp.jpg"
+    },
+    {
+        name: "היפואסטיס",
+        imgSrc: "https://res.cloudinary.com/dn3rdygdn/image/upload/v1736946495/IMG_6609_qepum7.jpg"
+    },
+    {
+        name: "דקל ננסי",
+        imgSrc: "https://res.cloudinary.com/dn3rdygdn/image/upload/v1737398703/IMG_6595_oso3t9.jpg"
+    }
+]
+
+// FLOWERS
+
+const winterSun = [
+    {
+        name: "שרך בוסטון",
+        imgSrc: "https://res.cloudinary.com/dn3rdygdn/image/upload/v1737398671/IMG_6586_laxau5.jpg"
+    },
+    {
+        name: "קלתאה",
+        imgSrc: "https://res.cloudinary.com/dn3rdygdn/image/upload/v1737398702/IMG_6591_jo9xrc.jpg"
+    },
+    {
+        name: "דקל",
+        imgSrc: "https://res.cloudinary.com/dn3rdygdn/image/upload/v1737398700/IMG_6589_thk26t.jpg"
+    },
+    {
+        name: "פפרומיה",
+        imgSrc: "https://res.cloudinary.com/dn3rdygdn/image/upload/v1737398691/IMG_6592_ugwppg.jpg"
+    },
+    {
+        name: "שערות שולמית",
+        imgSrc: "https://res.cloudinary.com/dn3rdygdn/image/upload/v1737398688/IMG_6593_ruz29w.jpg"
+    },
+    {
+        name: "ירקה",
+        imgSrc: "https://res.cloudinary.com/dn3rdygdn/image/upload/v1737398683/IMG_6588_jfv8ly.jpg"
+    },
+    {
+        name: "פפרומיה",
+        imgSrc: "https://res.cloudinary.com/dn3rdygdn/image/upload/v1737398701/IMG_6594_qrcunz.jpg"
+    },
+    {
+        name: "דקל ננסי",
+        imgSrc: "https://res.cloudinary.com/dn3rdygdn/image/upload/v1737398703/IMG_6595_oso3t9.jpg"
+    },
+    {
+        name: "היפואסטיס",
+        imgSrc: "https://res.cloudinary.com/dn3rdygdn/image/upload/v1736946495/IMG_6609_qepum7.jpg"
+    }
+]
+
