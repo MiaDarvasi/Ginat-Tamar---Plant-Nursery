@@ -71,3 +71,13 @@
     z-index: 10 !important;
 }
 
+
+
+@media (max-width: 775px) {
+
+    .ctg .skill-slider .react-multiple-carousel__arrow--right,
+    .ctg .skill-slider .react-multiple-carousel__arrow--left {
+        top: 35% !important;
+        scale: 1.5;
+    }
+}

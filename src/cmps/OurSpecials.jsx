@@ -81,10 +81,10 @@ export function OurSpecials() {
                 <div className="special-item">
                     <Carousel responsive={responsive} infinite={true} className="skill-slider">
                         <div>
-                            <img src="https://res.cloudinary.com/dn3rdygdn/image/upload/v1736617862/tigereye_s7vj71.jpg" />
+                            <img src="https://res.cloudinary.com/dn3rdygdn/image/upload/v1736617862/rosequartz_fqmakr.jpg" />
                         </div>
                         <div>
-                            <img src="https://res.cloudinary.com/dn3rdygdn/image/upload/v1736617862/rosequartz_fqmakr.jpg" />
+                            <img src="https://res.cloudinary.com/dn3rdygdn/image/upload/v1736617862/tigereye_s7vj71.jpg" />
                         </div>
                         <div>
                             <img src="https://res.cloudinary.com/dn3rdygdn/image/upload/v1736617862/tourmaline_tkqjhj.jpg" />

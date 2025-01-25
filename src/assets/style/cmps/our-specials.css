@@ -84,6 +84,7 @@
 
     .our-specials-cmp .react-multiple-carousel__arrow {
         opacity: 1 !important;
-        top: 45%;
+        top: 40%;
+        scale: 1.5;
     }
 }

@@ -8,7 +8,9 @@ export {
     grafting,
     colorfulIndoor,
     strongIndoor,
-    safeForPets
+    safeForPets,
+    winter,
+    bulb
 }
 
 // PAGES
@@ -348,8 +350,12 @@ const strongIndoor = [
 
 const safeForPets = [
     {
-        name: "סיגלית אפריקאית",
-        imgSrc: "https://res.cloudinary.com/dn3rdygdn/image/upload/v1737400776/IMG_6599_xrannw.jpg"
+        name: "ירקה",
+        imgSrc: "https://res.cloudinary.com/dn3rdygdn/image/upload/v1737398683/IMG_6588_jfv8ly.jpg"
+    },
+    {
+        name: "גוזמניה",
+        imgSrc: "https://res.cloudinary.com/dn3rdygdn/image/upload/v1737819286/IMG_7623_3_esqdzw.jpg"
     },
     {
         name: "קלתאה",
@@ -364,8 +370,8 @@ const safeForPets = [
         imgSrc: "https://res.cloudinary.com/dn3rdygdn/image/upload/v1737400771/IMG_6601_ikdd5a.jpg"
     },
     {
-        name: "ירקה",
-        imgSrc: "https://res.cloudinary.com/dn3rdygdn/image/upload/v1737398683/IMG_6588_jfv8ly.jpg"
+        name: "וריזאה",
+        imgSrc: "https://res.cloudinary.com/dn3rdygdn/image/upload/v1737819285/IMG_7623_2_lgedqj.jpg"
     },
     {
         name: "שרך בוסטון",
@@ -378,6 +384,10 @@ const safeForPets = [
     {
         name: "שערות שולמית",
         imgSrc: "https://res.cloudinary.com/dn3rdygdn/image/upload/v1737398688/IMG_6593_ruz29w.jpg"
+    },
+    {
+        name: "סיגלית אפריקאית",
+        imgSrc: "https://res.cloudinary.com/dn3rdygdn/image/upload/v1737400776/IMG_6599_xrannw.jpg"
     },
     {
         name: "פפרומיה",
@@ -399,42 +409,69 @@ const safeForPets = [
 
 // FLOWERS
 
-const winterSun = [
+const winter = [
     {
-        name: "שרך בוסטון",
-        imgSrc: "https://res.cloudinary.com/dn3rdygdn/image/upload/v1737398671/IMG_6586_laxau5.jpg"
+        name: "רקפת",
+        imgSrc: "https://res.cloudinary.com/dn3rdygdn/image/upload/v1737401809/IMG_6566_qmbabw.jpg"
     },
     {
-        name: "קלתאה",
-        imgSrc: "https://res.cloudinary.com/dn3rdygdn/image/upload/v1737398702/IMG_6591_jo9xrc.jpg"
+        name: "סלסלי כסף",
+        imgSrc: "https://res.cloudinary.com/dn3rdygdn/image/upload/v1737401833/IMG_6577_wa3mwc.jpg"
     },
     {
-        name: "דקל",
-        imgSrc: "https://res.cloudinary.com/dn3rdygdn/image/upload/v1737398700/IMG_6589_thk26t.jpg"
+        name: "נמזיה",
+        imgSrc: "https://res.cloudinary.com/dn3rdygdn/image/upload/v1737401850/IMG_6580_mm54il.jpg"
     },
     {
-        name: "פפרומיה",
-        imgSrc: "https://res.cloudinary.com/dn3rdygdn/image/upload/v1737398691/IMG_6592_ugwppg.jpg"
+        name: "חמציץ",
+        imgSrc: "https://res.cloudinary.com/dn3rdygdn/image/upload/v1737401837/IMG_6604_mqg9ul.jpg"
     },
     {
-        name: "שערות שולמית",
-        imgSrc: "https://res.cloudinary.com/dn3rdygdn/image/upload/v1737398688/IMG_6593_ruz29w.jpg"
+        name: "חרצית",
+        imgSrc: "https://res.cloudinary.com/dn3rdygdn/image/upload/v1737401840/IMG_6603_mundqc.jpg"
     },
     {
-        name: "ירקה",
-        imgSrc: "https://res.cloudinary.com/dn3rdygdn/image/upload/v1737398683/IMG_6588_jfv8ly.jpg"
+        name: "בקופה",
+        imgSrc: "https://res.cloudinary.com/dn3rdygdn/image/upload/v1737401817/IMG_6581_fqfpbe.jpg"
     },
     {
-        name: "פפרומיה",
-        imgSrc: "https://res.cloudinary.com/dn3rdygdn/image/upload/v1737398701/IMG_6594_qrcunz.jpg"
+        name: "לובליה",
+        imgSrc: "https://res.cloudinary.com/dn3rdygdn/image/upload/v1737401843/IMG_6605_fozkfx.jpg"
     },
     {
-        name: "דקל ננסי",
-        imgSrc: "https://res.cloudinary.com/dn3rdygdn/image/upload/v1737398703/IMG_6595_oso3t9.jpg"
+        name: "אמנון ותמר",
+        imgSrc: "https://res.cloudinary.com/dn3rdygdn/image/upload/v1737401837/IMG_6602_q0rw21.jpg"
+    }
+]
+
+const bulb = [
+    {
+        name: "דליה",
+        imgSrc: "https://res.cloudinary.com/dn3rdygdn/image/upload/v1737402850/IMG_2491_m5px70.jpg"
     },
     {
-        name: "היפואסטיס",
-        imgSrc: "https://res.cloudinary.com/dn3rdygdn/image/upload/v1736946495/IMG_6609_qepum7.jpg"
+        name: "לא יודעת",
+        imgSrc: "https://res.cloudinary.com/dn3rdygdn/image/upload/v1737402843/IMG_2425_agovdn.jpg"
+    },
+    {
+        name: "פעמוני שלג",
+        imgSrc: "https://res.cloudinary.com/dn3rdygdn/image/upload/v1737402833/IMG_2323_qhtvno.jpg"
+    },
+    {
+        name: "לא יודעת",
+        imgSrc: "https://res.cloudinary.com/dn3rdygdn/image/upload/v1737402828/IMG_2279_l7ygvm.jpg"
+    },
+    {
+        name: "יקינטון",
+        imgSrc: "https://res.cloudinary.com/dn3rdygdn/image/upload/v1737402837/IMG_2484_dvoszn.jpg"
+    },
+    {
+        name: "דליה",
+        imgSrc: "https://res.cloudinary.com/dn3rdygdn/image/upload/v1737402850/IMG_2486_osx8bq.jpg"
+    },
+    {
+        name: "נורית",
+        imgSrc: "https://res.cloudinary.com/dn3rdygdn/image/upload/v1737402791/C29CF1E3-BBB9-4AC3-878F-F9CD219E6BF1_watrgz.jpg"
     }
 ]
 

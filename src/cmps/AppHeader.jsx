@@ -48,7 +48,7 @@ export function AppHeader() {
         <section>
           <section className="app-header-content">
             <section className="header-contact">
-              <Link to="/">
+              <Link to="/" onClick={() => { handleLinkClick(null); toggleMenu() }}>
                 <section className="logo">
                   <img src={trees} alt="logo" />
                   <p>גינת תמר</p>

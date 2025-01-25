@@ -13,11 +13,10 @@
 //     </>
 // }
 
-
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 
-import { strongIndoor, colorfulIndoor, safeForPets } from "../../services/ctg.service.js";
+import { bulb, winter } from "../../services/ctg.service.js";
 
 export function Flowers() {
 
@@ -41,15 +40,14 @@ export function Flowers() {
     };
 
     const categories = [
-        { title: 'ירוקים וחזקים', items: strongIndoor },
-        { title: 'צבעוניים', items: colorfulIndoor },
-        { title: 'בטוחים לחיות מחמד', items: safeForPets },
+        { title: 'פורחים בחורף', items: winter },
+        { title: 'פקעות', items: bulb },
     ];
 
     return (
         <>
             <section dir="rtl" className="ctg ctg-succelents">
-                <h1>צמחי בית</h1>
+                <h1>פורחים</h1>
                 <p>אלו רק דוגמאות בודדות מהמבחר הרחב של צמחי הבית שיש למשתלה להציע. אם מצאתם משהו באתר שאתם אוהבים, אל תהססו להראות לנו, ואם לא נמצא בדיוק את הצמח שחיפשתם, אנחנו תמיד כאן כדי להמליץ לכם על משהו דומה!</p>
                 <p className='ctg-disclaimer'>*מלאי הצמחים במשתלה משתנה לפי עונות ואספקה.</p>
 
