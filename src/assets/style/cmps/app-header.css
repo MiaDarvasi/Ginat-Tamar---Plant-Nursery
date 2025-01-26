@@ -51,7 +51,7 @@
 }
 
 .app-header .logo img {
-    max-height: 3rem;
+    max-height: 4rem;
     width: auto;
 
     margin: 0;
@@ -166,7 +166,7 @@
 }
 
 .app-header-mobile-logo img {
-    max-width: 2rem;
+    max-width: 3rem;
 }
 
 .app-header-mobile-logo p {
