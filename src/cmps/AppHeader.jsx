@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
-import trees from "../assets/imgs/trees.svg";
+import logo from "../../public/logo.png"
 import phone from "../assets/imgs/icons/phone.svg";
 
 export function AppHeader() {
@@ -50,8 +50,7 @@ export function AppHeader() {
             <section className="header-contact">
               <Link to="/" onClick={() => { handleLinkClick(null); toggleMenu() }}>
                 <section className="logo">
-                  <img src={trees} alt="logo" />
-                  <p>גינת תמר</p>
+                  <img src={logo} alt="logo" />
                 </section>
               </Link>
               <h1>גינת תמר</h1>
@@ -79,8 +78,7 @@ export function AppHeader() {
           <section className="app-header-mobile-logo">
             <Link to="/">
               <section className="logo">
-                <img src={trees} alt="logo" />
-                <p>גינת תמר</p>
+                <img src={logo} alt="logo" />
               </section>
             </Link>
             <section className="header-call">

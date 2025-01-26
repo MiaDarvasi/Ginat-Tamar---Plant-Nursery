@@ -1,14 +1,12 @@
 :root {
+    --green-dark: #00612f;
+    --green-med: #549852;
+    --green-light: #9ed073;
+
+    --orange: #e77817;
+
     --main-dark: #291f1f;
 
-    --green1: #99d54b;
-    --green1-dark: #85ba40;
-    --green2: #18a572;
-    --green2-dark: #148b60;
-    --yellow: #eecc50;
-
-
-    
     --dark-gray1: #2e2e2e;
     --dark-gray2: #3c3c3c;
     --dark-gray3: #505050;
@@ -18,7 +16,4 @@
     --light-gray2: #dadada;
     --light-gray3: #c3c3c3;
     --light-gray4: #adadad;
-
-    /* --main-dark: #156157; */
-    --main-light: #a6eeed;
 }

@@ -88,7 +88,7 @@
 }
 
 .connect .connect-social img {
-    background-color: var(--green1);
+    background-color: var(--green-light);
     border-radius: 50%;
     max-width: 1.7rem;
     max-height: 1.7rem;
@@ -97,7 +97,7 @@
 }
 
 .connect .connect-social img:hover {
-    background-color: var(--yellow);
+    background-color: var(--orange);
     cursor: pointer;
 }
 
@@ -122,7 +122,7 @@
 
 .connect hr {
     border: none;
-    border-bottom: 0.5px solid var(--green1-dark);
+    border-bottom: 0.5px solid var(--green-med);
     margin: 0;
     margin-block: 0.5rem;
 }

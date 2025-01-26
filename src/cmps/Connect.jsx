@@ -2,12 +2,13 @@ import ig from "../assets/imgs/icons/ig.svg";
 import facebook from "../assets/imgs/icons/facebook.svg";
 import phone from "../assets/imgs/icons/phone.svg";
 import trees from "../assets/imgs/trees.svg";
+import logo from "../../public/logo.png"
+
 
 export function Connect() {
     return <section className="connect full">
         <section className="logo">
-            <img src={trees} alt="logo" />
-            <p>גינת תמר</p>
+            <img src={logo} alt="logo" />
         </section>
         <section className="connect-content">
             <section className="connect-contact" dir="rtl" id="connect">
