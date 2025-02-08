@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { crystals } from '../services/ctg.service.js';
+import { crystals } from '../data/ctg.lists.js';
+import { crystalsTitles } from '../data/app.titles.js';
 
 export function Crystal() {
     const [activeIndex, setActiveIndex] = useState(null);
@@ -11,10 +12,8 @@ export function Crystal() {
 
     return (
         <section className="crystal">
-            <h2 dir="rtl">קריסטלים</h2>
-            <p dir="rtl" className="crystal-title-description">
-                במשתלה שלנו תוכלו למצוא אוסף מיוחד של קריסטלים טבעיים. כל קריסטל מביא עמו אנרגיה חיובית ויופי טבעי שיכול להעשיר את הבית או הגינה. אצלנו תמצאו קריסטלים שמתאימים לאוהבי הרוחניות, למי שמחפש פתרונות להארה אישית או פשוט לאוהבי יופי טבעי. הקריסטלים שלנו מגיעים בגדלים שונים וכוללים אבני חן עם סגולות ריפוי, ויזואליות מרהיבה ומגע קסום. אנו מזמינים אתכם לבוא ולהתרשם מהמבחר שלנו ולהתנסות באנרגיות המיוחדות של כל קריסטל.
-            </p>
+            <h2 dir="rtl">{crystalsTitles.title}</h2>
+            <p dir="rtl" className="crystal-title-description">{crystalsTitles.subTitle}</p>
             <section className="crystal-list">
                 {crystals.map((crystal, index) => (
                     <div
@@ -34,7 +33,7 @@ export function Crystal() {
                     </div>
                 ))}
             </section>
-            <p dir="rtl" className="crystal-disclaimer">מלאי הקריסטלים במשתלה משתנה לפי אספקה.</p>
+            <p dir="rtl" className="crystal-disclaimer">{crystalsTitles.disclaimer}</p>
         </section>
     );
 }

@@ -1,11 +1,12 @@
-import { galleryImages } from "../services/ctg.service.js";
+import { galleryTitles } from "../data/app.titles.js";
+import { galleryImages } from "../data/ctg.lists.js";
 
 export function Gallery() {
 
     return (
         <section className="gallery">
-            <h1 dir="rtl">קצת תמונות מהמשתלה שלנו</h1>
-            <p dir="rtl">הצמחים בתמונות צולמו בתקופות שונות ולכן לא תמיד כל הצמחים יהיו זמינים במלאי. עם זאת, תמיד ניתן למצוא תחליפים איכותיים.</p>
+            <h1 dir="rtl">{galleryTitles.title}</h1>
+            <p dir="rtl">{galleryTitles.subTitle}</p>
             <section className="gallery-imgs">
                 {galleryImages.map((imgSrc, index) => (
                     <img key={index} src={galleryImages[index]} alt={`Gallery Image ${index + 1}`} />

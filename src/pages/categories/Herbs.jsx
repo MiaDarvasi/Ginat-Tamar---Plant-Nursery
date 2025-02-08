@@ -1,11 +1,12 @@
-import { herbs } from "../../services/ctg.service.js";
+import { herbs } from "../../data/ctg.lists.js";
+import { herbsTitles } from "../../data/app.titles.js";
 
 export function Herbs() {
 
     return (
         <section dir="rtl" className="herbs">
-            <h1>תבלינים</h1>
-            <h3>אלו רק דוגמאות בודדות מהמבחר הרחב של העשבים שיש למשתלה להציע. אם מצאתם משהו באתר שאתם אוהבים, אל תהססו להראות לנו, ואם לא נמצא בדיוק את הצמח שחיפשתם, אנחנו תמיד כאן כדי להמליץ לכם על משהו דומה!</h3>
+            <h1>{herbsTitles.title}</h1>
+            <h3>{herbsTitles.subTitle}</h3>
             <section className="herb-list">
                 {herbs.map((herb, index) => (
                     <div key={index} className="herb">
@@ -17,7 +18,7 @@ export function Herbs() {
                     </div>
                 ))}
             </section>
-            <p className='disclaimer'>מלאי התבלינים במשתלה משתנה לפי עונות ואספקה.</p>
+            <p className='disclaimer'>{herbsTitles.disclaimer}</p>
         </section>
     );
 }

@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
-import logo from "../../public/logo.png"
+import logo from "/logo.png"
 import phone from "../assets/imgs/icons/phone.svg";
 
 export function AppHeader() {
@@ -76,7 +76,7 @@ export function AppHeader() {
       {isMobile && (
         <section className="app-header-mobile">
           <section className="app-header-mobile-logo">
-            <Link to="/">
+            <Link to="/" onClick={() => { handleLinkClick(null); menuOpen && toggleMenu() }}>
               <section className="logo">
                 <img src={logo} alt="logo" />
               </section>

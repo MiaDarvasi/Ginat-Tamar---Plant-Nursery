@@ -83,7 +83,11 @@
 }
 
 
-@media (max-width: 775px) {
+@media (max-width: 450px) {
+
+    .gallery img {
+        max-height: none;
+    }
 
     .gallery-imgs {
         grid-template-columns: repeat(2, 1fr);

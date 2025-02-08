@@ -2,7 +2,7 @@ import ig from "../assets/imgs/icons/ig.svg";
 import facebook from "../assets/imgs/icons/facebook.svg";
 import phone from "../assets/imgs/icons/phone.svg";
 import trees from "../assets/imgs/trees.svg";
-import logo from "../../public/logo.png"
+import logo from "/logo.png"
 
 
 export function Connect() {

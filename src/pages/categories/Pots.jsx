@@ -3,6 +3,8 @@ import plastic from '../../assets/imgs/pots/plastic.jpg';
 import ceramic from '../../assets/imgs/pots/ceramic.jpg';
 import terracotta from '../../assets/imgs/pots/terracotta.jpg';
 
+import { potsTitles } from '../../data/app.titles';
+
 export function Pots() {
 
     const potsData = [
@@ -31,8 +33,8 @@ export function Pots() {
     return (
         <>
             <section dir="rtl" className="pots">
-                <h1>עציצים</h1>
-                <p>במשתלה שלנו תמצאו מבחר רחב של עציצים במגוון צורות, גדלים וחומרים שונים. כל סוג של עציץ מציע יתרונות ייחודיים שמתאימים לצרכים שונים, בין אם אתם מחפשים עציץ דקורטיבי, פונקציונלי או כזה שמתאים לסוג צמח מסוים. אנו דואגים להביא לכם את כל האפשרויות, כך שתוכלו למצוא את העציץ המושלם.</p>
+                <h1>{potsTitles.title}</h1>
+                <p>{potsTitles.subTitle}</p>
                 <section className="pots-type-list">
                     {potsData.map((pot, index) => (
                         <div className="pots-type" key={index}>
