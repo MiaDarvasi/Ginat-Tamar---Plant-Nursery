@@ -1,6 +1,6 @@
 import { Ctg } from "../../cmps/Ctg.jsx";
 import { bulb, winter } from "../../data/ctg.lists.js";
-import { flowers } from "../../data/app.titles.js";
+import { flowersTitle } from "../../data/app.titles.js";
 
 export function Flowers() {
 
@@ -14,8 +14,8 @@ export function Flowers() {
             <section dir="rtl" className="ctg">
                 <Ctg
                     categories={categories}
-                    title={flowers.title}
-                    subTitle={flowers.subTitle} />
+                    title={flowersTitle.title}
+                    subTitle={flowersTitle.subTitle} />
             </section>
         </>
     );

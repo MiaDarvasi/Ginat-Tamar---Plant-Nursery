@@ -1,4 +1,27 @@
 .about {
     text-align: center;
     font-family: Fredoka-Light;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.about img {
+    max-width: 100%;
+    max-height: 60vh;
+    object-fit: cover;
+    aspect-ratio: 2 / 1;
+}
+
+.about h1 {
+    font-family: Amatic-Bold;
+    font-size: 2rem;
+    margin: 0;
+}
+
+.about p {
+    font-family: Noto-Thin;
+    font-size: 1rem;
+    margin: 0;
+    margin-block-start: 0.2rem;
 }

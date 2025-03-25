@@ -5,6 +5,7 @@ import logo from "/logo.png"
 import phone from "../assets/imgs/icons/phone.svg";
 
 export function AppHeader() {
+  
   const [isScrolled, setIsScrolled] = useState(false);
   const [isActive, setIsActive] = useState(null);
   const [menuOpen, setMenuOpen] = useState(false);

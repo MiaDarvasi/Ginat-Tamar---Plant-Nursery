@@ -2,17 +2,13 @@ import React, { useState, useEffect } from "react";
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 
-import img1 from "../assets/imgs/strawberry.png";
-import img2 from "../assets/imgs/pottery.png";
-import img3 from "../assets/imgs/galleryImgs/galleryimg20.jpg";
-import img4 from "../assets/imgs/galleryImgs/galleryimg11.jpg";
-import img5 from "../assets/imgs/galleryImgs/galleryimg3.jpg";
-import img6 from "../assets/imgs/galleryImgs/galleryimg16.jpg";
+import { carouselItems } from '../data/app.texts';
+import { galleryImages } from "../data/ctg.lists";
 
 export function LandpageCmp() {
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
-    const images = [img1, img2, img3, img4, img5, img6];
+    const images = galleryImages
 
     const responsive = {
         superLargeDesktop: {
@@ -32,50 +28,7 @@ export function LandpageCmp() {
             items: 1
         }
     };
-    
-    const carouselItems = [
-        {
-            title: 'גינת תמר',
-            subtitle: 'דרך בית לחם 34, ירושלים',
-            description: 'המשתלה הירושלמית הותיקה ביותר, פועלת מאז 1984 ומציעה מגוון רחב של צמחים איכותיים בשירות אישי ומקצועי.',
-        },
-        {
-            title: 'צמחי בית',
-            subtitle: 'אווירה ירוקה בתוך הבית',
-            description: '',
-        },
-        {
-            title: 'עצי פרי',
-            subtitle: 'פירות הדר, מטפסים, רב עונתיים ועוד',
-            description: '',
-        },
-        {
-            title: 'תבלינים',
-            subtitle: 'תבלינים לתה, סלט, בישול ועוד',
-            description: '',
-        },
-        {
-            title: 'פרחים לגינה',
-            subtitle: 'עונתיים ורב שנתיים במגוון גדלים',
-            description: '',
-        },
-        {
-            title: 'סוקולנטים',
-            subtitle: 'מבחר ענק של סוקולנטים צבעוניים ומיוחדים',
-            description: '',
-        },
-        {
-            title: 'עציצים וכלים',
-            subtitle: 'עציצי חרס, קרמיקה, פלסטיק ועוד',
-            description: '',
-        },
-        {
-            title: 'כלי גינון והשקייה',
-            subtitle: 'צינורות וטפטפות, עט חפירה, מעדר, כפפות ועוד',
-            description: '',
-        }
-    ];
-    
+
     useEffect(() => {
         const intervalId = setInterval(() => {
             setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
@@ -105,12 +58,12 @@ export function LandpageCmp() {
                                 {item.subtitle && <h3 className="item-main-address" dir="rtl">{item.subtitle}</h3>}
                                 {item.description && <p dir="rtl">{item.description}</p>}
                             </section>
-                            <a href="#connect">
-                                <button className="contact-btn">דברו איתנו</button>
-                            </a>
                         </div>
                     ))}
                 </Carousel>
+                <a href="#connect">
+                    <button className="contact-btn">דברו איתנו</button>
+                </a>
             </div>
         </section>
     );

@@ -14,10 +14,10 @@ export function CategoriesCmp() {
     const categories = [
         { to: "/categories/indoor", imgSrc: houseplant, title: "צמחי בית" },
         { to: "/categories/herbs", imgSrc: herbs, title: "תבלינים" },
-        { to: "/categories/succulents", imgSrc: succulents, title: "קקטוסים וסוקולנטים" },
         { to: "/categories/flowers", imgSrc: flowers, title: "פורחים" },
-        { to: "/categories/trees", imgSrc: fruit, title: "עצים ושיחים" },
-        { to: "/categories/vining", imgSrc: vining, title: "מטפסים" },
+        { to: "/categories/succulents", imgSrc: succulents, title: "קקטוסים וסוקולנטים" },
+        // { to: "/categories/trees", imgSrc: fruit, title: "עצים ושיחים" },
+        // { to: "/categories/vining", imgSrc: vining, title: "מטפסים" },
         { to: "/categories/pots", imgSrc: pottery, title: "עציצים" },
         { to: "/crystal", imgSrc: crystals, title: "קריסטלים" }
     ];

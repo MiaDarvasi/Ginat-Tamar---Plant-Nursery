@@ -1,5 +1,5 @@
 import { Ctg } from "../../cmps/Ctg.jsx";
-import { succulents } from "../../data/app.titles.js";
+import { succulentsTitle } from "../../data/app.titles.js";
 import { vining, blooming, colorful, grafting } from "../../data/ctg.lists.js";
 
 export function Succulents() {
@@ -16,8 +16,8 @@ export function Succulents() {
             <section dir="rtl" className="ctg">
                 <Ctg
                     categories={categories}
-                    title={succulents.title}
-                    subTitle={succulents.subTitle} />
+                    title={succulentsTitle.title}
+                    subTitle={succulentsTitle.subTitle} />
             </section>
         </>
     );

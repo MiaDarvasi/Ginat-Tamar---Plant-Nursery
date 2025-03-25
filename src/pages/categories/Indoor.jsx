@@ -1,5 +1,5 @@
 import { Ctg } from "../../cmps/Ctg.jsx";
-import { indoor } from "../../data/app.titles.js";
+import { indoorTitle } from "../../data/app.titles.js";
 import { strongIndoor, colorfulIndoor, safeForPets } from "../../data/ctg.lists.js";
 
 export function Indoor() {
@@ -15,8 +15,8 @@ export function Indoor() {
             <section dir="rtl" className="ctg">
                 <Ctg
                     categories={categories}
-                    title={indoor.title}
-                    subTitle={indoor.subTitle} />
+                    title={indoorTitle.title}
+                    subTitle={indoorTitle.subTitle} />
             </section>
         </>
     );

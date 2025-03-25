@@ -10,7 +10,8 @@ export {
     strongIndoor,
     safeForPets,
     winter,
-    bulb
+    bulb,
+    specials
 }
 
 
@@ -503,3 +504,41 @@ const bulb = {
     ]
 }
 
+// CMPS
+
+const specials = [
+    {
+        title: "מבחר קקטוסים נדירים",
+        images: [
+            "https://res.cloudinary.com/dn3rdygdn/image/upload/v1736618684/PXL_20241002_123809295_2_brayal.jpg",
+            "https://res.cloudinary.com/dn3rdygdn/image/upload/v1737397769/20180413_140037_aelxoq.jpg",
+            "https://res.cloudinary.com/dn3rdygdn/image/upload/v1736619094/galleryimg10_y9nvez.jpg",
+            "https://res.cloudinary.com/dn3rdygdn/image/upload/v1736618679/PXL_20241212_090137097_ccenae.jpg",
+            "https://res.cloudinary.com/dn3rdygdn/image/upload/v1736618676/PXL_20241204_131740398_2_hc564x.jpg",
+            "https://res.cloudinary.com/dn3rdygdn/image/upload/v1736618679/PXL_20241204_131401508_2_wat6ms.jpg"
+        ],
+        description: "במשתלה שלנו תוכלו ליהנות ממבחר רחב ומיוחד של קקטוסים וסוקולנטים, כולל סוגים נדירים וייחודיים שמגיעים מכל העולם. אנחנו כאן כדי להציע לכם צמחים שלא תמצאו בכל מקום, עם כל המידע וההכוונה שתצטרכו כדי להכניס את הטבע לבית או לגינה שלכם."
+    },
+    {
+        title: "בריכת צפרדעים ודגים",
+        images: [
+            "https://res.cloudinary.com/dn3rdygdn/image/upload/v1736619129/galleryimg31_ftcths.jpg",
+            "https://res.cloudinary.com/dn3rdygdn/image/upload/v1736619090/galleryimg11_fzkci2.jpg",
+            "https://res.cloudinary.com/dn3rdygdn/image/upload/v1736619092/galleryimg9_u7qvpu.jpg",
+            "https://res.cloudinary.com/dn3rdygdn/image/upload/v1736619138/galleryimg39_hfnvq1.jpg",
+            "https://res.cloudinary.com/dn3rdygdn/image/upload/v1736619131/galleryimg34_xmlzzv.jpg"
+        ],
+        description: "במשתלה שלנו תמצאו בריכות צפרדעים קסומות. כשקר הן שקטות ורגועות, נהנות משנת החורף שלהן. אך בקיץ, כל הבריכה מתמלאת בקולות קירקורים מלאי חיים, והצפרדעים שוחות בין העלים וצבעי הבריכה, מוסיפות קסם טבעי ואווירה מיוחדת לכל פינה."
+    },
+    {
+        title: "קריסטלים ואבנים מיוחדות",
+        images: [
+            "https://res.cloudinary.com/dn3rdygdn/image/upload/v1736617862/rosequartz_fqmakr.jpg",
+            "https://res.cloudinary.com/dn3rdygdn/image/upload/v1736617862/tigereye_s7vj71.jpg",
+            "https://res.cloudinary.com/dn3rdygdn/image/upload/v1736617862/tourmaline_tkqjhj.jpg",
+            "https://res.cloudinary.com/dn3rdygdn/image/upload/v1736617859/amethyst_i4gjch.jpg",
+            "https://res.cloudinary.com/dn3rdygdn/image/upload/v1736617861/jasper_kgzeq7.jpg"
+        ],
+        description: "יש לנו מבחר מגוון של אבנים וקריסטלים, כל אחד עם סגולות ואנרגיות שמביאות עימן רוגע, איזון וחיזוק. תוכלו למצוא כאן אבנים בגדלים שונים, שמגיעות ממקורות שונים ברחבי העולם, כל אחת עם הכוחות הייחודיים שלה."
+    }
+]
