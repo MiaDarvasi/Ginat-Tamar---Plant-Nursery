@@ -98,17 +98,27 @@
 
 @media (max-width: 450px) {
 
-
-    .gallery-imgs {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .gallery-imgs img:nth-child(3n+1) {
-        grid-row: auto;
-    }
-
     .gallery-modal {
         top: 5%;
+    }
+
+    .gallery-imgs {
+        max-width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .gallery-imgs img:nth-child(1) {
+        grid-area: unset;
+    }
+    
+    .gallery-imgs img:nth-child(3n+1) {
+        grid-row: unset;
+        grid-column: span 2;
+    }
+    
+    .gallery-imgs img:nth-child(3n+2) {
+        grid-column: unset;
     }
 
 }
