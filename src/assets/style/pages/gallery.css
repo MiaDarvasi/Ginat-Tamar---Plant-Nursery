@@ -98,6 +98,11 @@
 
 @media (max-width: 450px) {
 
+
+    .gallery-imgs {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
     .gallery-imgs img:nth-child(3n+1) {
         grid-row: auto;
     }

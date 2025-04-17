@@ -10,6 +10,7 @@ export {
     strongIndoor,
     safeForPets,
     winter,
+    summer,
     bulb,
     specials
 }
@@ -251,39 +252,39 @@ const colorful = {
 const grafting = {
     title: "הרכבות",
     examples: [
-       {
-           name: "לא יודעת",
-           imgSrc: "https://res.cloudinary.com/dn3rdygdn/image/upload/v1737397755/IMG_9654_mn5nav.jpg"
-       },
-       {
-           name: "לא יודעת",
-           imgSrc: "https://res.cloudinary.com/dn3rdygdn/image/upload/v1737397755/IMG_8285_xdpju4.jpg"
-       },
-       {
-           name: "לא יודעת",
-           imgSrc: "https://res.cloudinary.com/dn3rdygdn/image/upload/v1737397769/20180413_140037_aelxoq.jpg"
-       },
-       {
-           name: "לא יודעת",
-           imgSrc: "https://res.cloudinary.com/dn3rdygdn/image/upload/v1737397768/20180409_124146_cweftg.jpg"
-       },
-       {
-           name: "לא יודעת",
-           imgSrc: "https://res.cloudinary.com/dn3rdygdn/image/upload/v1737397770/20180625_155805_eubfoi.jpg"
-       },
-       {
-           name: "לא יודעת",
-           imgSrc: "https://res.cloudinary.com/dn3rdygdn/image/upload/v1737397773/20180625_154527_zoqsot.jpg"
-       },
-       {
-           name: "לא יודעת",
-           imgSrc: "https://res.cloudinary.com/dn3rdygdn/image/upload/v1737397773/20180625_154603_p6vnow.jpg"
-       },
-       {
-           name: "לא יודעת",
-           imgSrc: "https://res.cloudinary.com/dn3rdygdn/image/upload/v1737397777/20180625_155322_rr9amu.jpg"
-       }
-   ]
+        {
+            name: "לא יודעת",
+            imgSrc: "https://res.cloudinary.com/dn3rdygdn/image/upload/v1737397755/IMG_9654_mn5nav.jpg"
+        },
+        {
+            name: "לא יודעת",
+            imgSrc: "https://res.cloudinary.com/dn3rdygdn/image/upload/v1737397755/IMG_8285_xdpju4.jpg"
+        },
+        {
+            name: "לא יודעת",
+            imgSrc: "https://res.cloudinary.com/dn3rdygdn/image/upload/v1737397769/20180413_140037_aelxoq.jpg"
+        },
+        {
+            name: "לא יודעת",
+            imgSrc: "https://res.cloudinary.com/dn3rdygdn/image/upload/v1737397768/20180409_124146_cweftg.jpg"
+        },
+        {
+            name: "לא יודעת",
+            imgSrc: "https://res.cloudinary.com/dn3rdygdn/image/upload/v1737397770/20180625_155805_eubfoi.jpg"
+        },
+        {
+            name: "לא יודעת",
+            imgSrc: "https://res.cloudinary.com/dn3rdygdn/image/upload/v1737397773/20180625_154527_zoqsot.jpg"
+        },
+        {
+            name: "לא יודעת",
+            imgSrc: "https://res.cloudinary.com/dn3rdygdn/image/upload/v1737397773/20180625_154603_p6vnow.jpg"
+        },
+        {
+            name: "לא יודעת",
+            imgSrc: "https://res.cloudinary.com/dn3rdygdn/image/upload/v1737397777/20180625_155322_rr9amu.jpg"
+        }
+    ]
 }
 
 // INDOOR
@@ -470,12 +471,50 @@ const winter = {
     ]
 }
 
+const summer = {
+    title: "פורחים בקיץ",
+    examples: [
+        {
+            name: "פטוניה מפלית",
+            imgSrc: "https://res.cloudinary.com/dn3rdygdn/image/upload/v1744876539/IMG_7122_dyatsb.jpg"
+        },
+        {
+            name: "בשמת",
+            imgSrc: "https://res.cloudinary.com/dn3rdygdn/image/upload/v1744876538/IMG_7117_hybyz2.jpg"
+        },
+        {
+            name: "בידנס (דו-שן)",
+            imgSrc: "https://res.cloudinary.com/dn3rdygdn/image/upload/v1744876530/IMG_7119_msuhpv.jpg"
+        },
+        {
+            name: "וינקה",
+            imgSrc: "https://res.cloudinary.com/dn3rdygdn/image/upload/v1744876536/IMG_7123_sdyhc8.jpg"
+        },
+        {
+            name: "טגטס",
+            imgSrc: "https://res.cloudinary.com/dn3rdygdn/image/upload/v1744876521/IMG_7116_jrbbkd.jpg"
+        },
+        {
+            name: "ורבנה",
+            imgSrc: "https://res.cloudinary.com/dn3rdygdn/image/upload/v1744876532/IMG_7120_h8cqce.jpg"
+        },
+        {
+            name: "פטוניה",
+            imgSrc: "https://res.cloudinary.com/dn3rdygdn/image/upload/v1744876538/IMG_7118_h7ru0o.jpg"
+        }
+    ]
+}
+
 const bulb = {
     title: "פקעות",
     examples: [
         {
             name: "דליה",
             imgSrc: "https://res.cloudinary.com/dn3rdygdn/image/upload/v1737402850/IMG_2491_m5px70.jpg"
+        },
+        {
+            name: "ציפור גן עדן",
+            imgSrc: "https://res.cloudinary.com/dn3rdygdn/image/upload/v1744876542/IMG_7136_v9gyui.jpg"
         },
         {
             name: "לא יודעת",

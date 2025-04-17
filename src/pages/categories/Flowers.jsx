@@ -1,11 +1,12 @@
 import { Ctg } from "../../cmps/Ctg.jsx";
-import { bulb, winter } from "../../data/ctg.lists.js";
+import { bulb, summer, winter } from "../../data/ctg.lists.js";
 import { flowersTitle } from "../../data/app.titles.js";
 
 export function Flowers() {
 
     const categories = [
         { title: winter.title, items: winter.examples },
+        { title: summer.title, items: summer.examples },
         { title: bulb.title, items: bulb.examples },
     ]
 

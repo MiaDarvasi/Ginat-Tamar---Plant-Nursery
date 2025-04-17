@@ -62,7 +62,7 @@ export function LandpageCmp() {
                     ))}
                 </Carousel>
                 <a href="#connect">
-                    <button className="contact-btn">דברו איתנו</button>
+                    <a href="tel:02-6710335" className="contact-btn">דברו איתנו</a>
                 </a>
             </div>
         </section>
